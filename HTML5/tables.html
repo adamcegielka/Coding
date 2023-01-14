@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Niezbędnik do tworzenia strony WWW" />
+    <meta name="kaywords" content="html, css, javascript" />
+    <meta name="author" content="Adam" />
+    <title>HTML5 - Tabele</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-link">
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" >developer.mozilla.org</a>
+        </p>
+        <p>
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools.com</a>
+        </p>
+      </div>
+      <h2><u>Tabele:</u></h2>
+    <!-- Skrót dla VSC - table>tr*2>td*3 -->
+    <h2>- Prosta Tabela</h2>
+    <table>
+      <tr>
+        <td>Wiersz 1 Kolumna 1</td>
+        <td>Wiersz 1 Kolumna 2</td>
+        <td>Wiersz 1 Kolumna 3</td>
+      </tr>
+      <tr>
+        <td>Wiersz 2 Kolumna 1</td>
+        <td>Wiersz 2 Kolumna 3</td>
+        <td>Wiersz 2 Kolumna 3</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Użycie - rowspan="2" - łączenie wierszy tabeli -->
+    <h2>- rowspan - łączenie wierszy</h2>
+    <table>
+      <tr>
+        <td>Wiersz 1 Kolumna 1</td>
+        <td>Wiersz 1 Kolumna 2</td>
+        <td rowspan="2">W:1 K:3 i W:2 K:3</td>
+      </tr>
+      <tr>
+        <td>Wiersz 2 Kolumna 1</td>
+        <td>Wiersz 2 Kolumna 2</td>
+        <!-- <td>Wiersz 2 Kolumna 3</td> -->
+      </tr>
+    </table>
+    <br />
+    <!-- Użycie - colspan="3" - łączenie kolumny tabeli  -->
+    <h2>- colspan - łączenie kolumny</h2>
+    <table>
+      <tr>
+        <td colspan="3">W:1 K:1 - W:1 K:2 - W:1 K:3</td>
+        <!-- <td>Wiersz 1 Kolumna 2</td> -->
+        <!-- <td>Wiersz 2 Kolumna 3</td> -->
+      </tr>
+      <tr>
+        <td>Wiersz 2 Kolumna 1</td>
+        <td>Wiersz 2 Kolumna 2</td>
+        <td>Wiersz 2 Kolumna 3</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Połączona tabela rowspan i colspan -->
+    <h2>- Połączona tabela z rowspan i colspan</h2>
+    <table>
+      <tr>
+        <td>100</td>
+        <td rowspan="2">200</td>
+        <td>300</td>
+        <td rowspan="3">400</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>100</td>
+        <!-- <td>200</td> - rowspan -->
+        <td>300</td>
+        <!-- <td>400</td> - rowspan -->
+        <td>500</td>
+      </tr>
+      <tr>
+        <td colspan="2">1 - 2</td>
+        <!-- <td>200</td> - colspan -->
+        <td>300</td>
+        <!-- <td>400</td> - rowspan -->
+        <td>500</td>
+      </tr>
+    </table>
+    <br />
+    <!-- thead - nagłówek, tfoot - stopka, tbody - treść tabeli -->
+    <h2>- Nagłówek, treść, stopka</h2>
+    <h5>
+      <i>
+        thead - nagłówek tabeli <br />
+        tbody - treść tabeli <br />
+        tfoot - stopka tabeli</i
+      >
+    </h5>
+    <table>
+      <!-- caption - podpis tabeli poza tabelą, nie jest obowiązkowy -->
+      <caption>
+        Nagłówek Tabeli
+      </caption>
+      <!-- thead - start -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nazwa 2</th>
+          <th>Nazwa 3</th>
+          <th>Nazwa 4</th>
+        </tr>
+      </thead>
+      <!-- thead - end -->
+      <!-- tbody - start -->
+      <tbody>
+        <tr>
+          <td>Wiersz 1</td>
+          <td>200</td>
+          <td>300</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Wiersz 2</td>
+          <td>200</td>
+          <td>300</td>
+          <td>400</td>
+        </tr>
+      </tbody>
+      <!-- tbody - end -->
+      <!-- tfoot - start -->
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Stopka 2</td>
+          <td>Stopka 3</td>
+          <td>Stopka 4</td>
+        </tr>
+      </tfoot>
+      <!-- tfoot - end -->
+    </table>
+    <br />
+    <!-- Grupy kolumn - colgroup -->
+    <h2>- Grupy kolumn - colgroup</h2>
+    <table>
+      <caption>
+        Nazwa Tabeli
+      </caption>
+      <colgroup>
+        <col span="1" style="background-color: royalblue" />
+        <col span="2" style="background-color: green" />
+        <col span="1" />
+        <col span="1" style="background-color: black" />
+      </colgroup>
+      <tr>
+        <td>Wiersz 1</td>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Wiersz 2</td>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Wiersz 3</td>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+        <td>400</td>
+      </tr>
+    </table>
+    <br />
+   </div>
+  </body>
+</html>

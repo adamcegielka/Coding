@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Niezbędnik do tworzenia strony WWW" />
+    <meta name="kaywords" content="html, css, javascript" />
+    <meta name="author" content="Adam" />
+    <title>Atrybutyt: class i id</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-link">
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" >developer.mozilla.org</a>
+        </p>
+        <p>
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools.com</a>
+        </p>
+      </div>
+      <h2><u>Atrybuty: class i id</u></h2>
+      <h3>Corvetta</h3>
+      <!-- lista od tyłu -->
+      <ol type="a" reversed="reversed">
+        <li>Zabytkowe</li>
+        <li>Starsze</li>
+        <li>Nowe</li>
+        <li>Nowości</li>
+      </ol>
+      <br />
+      <!-- alt="gdy obraz się nie wyświetli pokazuje napis" -->
+      <!-- title="informacja dla niewidomych" -->
+      <img
+        src="https://a.allegroimg.com/original/11682d/906e1f00401192b7b7f9224fc5cd/Chevrolet-Corvette-Grand-Sport-LT1-6-2-V8-466-KM"
+        width="200"
+        alt="Obrazek samochodu Corvetta"
+        title="Samochód Corvetta"
+        data-description="Opis obrazka dostępny w js"
+      />
+      <br /><br />
+      <div>
+        <p class="bolded-text info-alert">Lorem ipsum dolor sit amet consectetur. -
+          <span class="opis-dwa-atrybuty">class + class z kolorem, dwa atrybuty</span>
+        </p>
+        <p class="bolded-text info-passed">Lorem ipsum dolor sit amet consectetur. -
+          <span class="opis-dwa-atrybuty">ta sama class + druga class z innym kolorem, dwa atrybuty</span>
+        </p>
+      </div>
+      <div>
+        <h3>Class oraz id:</h3>
+        <p id="introduction">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="bolded-text">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="bolded-text ifo-box">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="bolded-text ifo-box alert-box">Lorem ipsum dolor sit amet consectetur.</p>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

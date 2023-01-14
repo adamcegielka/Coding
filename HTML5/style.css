@@ -1,0 +1,222 @@
+body {
+  background-color: rgb(85, 80, 80);
+  color: aliceblue;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
+
+table,
+td {
+  border: 1px solid red;
+  padding: 1px;
+  text-align: center;
+}
+
+.info-link {
+  border: 2px solid green;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.container {
+  width: 700px;
+  text-align: left;
+  margin: auto;
+}
+
+.kolor {
+  color: blue;
+}
+
+.znak {
+  color: bisque;
+}
+
+.bolded-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+.info-alert {
+  color: red;
+}
+
+.info-passed {
+  color: blue;
+}
+
+.opis-dwa-atrybuty {
+  color: aliceblue;
+  font-size: 10px;
+}
+
+#introduction {
+  color: green;
+}
+
+.ifo-box {
+  border: 1px solid black;
+}
+
+.alert-box {
+  background-color: rgb(224, 60, 60);
+  border: 3px solid greenyellow;
+}
+
+.lacza {
+  color: wheat;
+}
+
+.opis {
+  color: aliceblue;
+}
+
+.tab-syment {
+  width: 700px;
+}
+
+.tdarticle {
+  width: 500px;
+  height: 600px;
+}
+
+.tdaside {
+  width: 200px;
+  height: 600px;
+}
+
+.lege {
+  width: 200px;
+  height: 800px;
+  border: 2px solid rgb(189, 80, 189);
+}
+
+.tresc {
+  width: 500px;
+  height: 800px;
+  border: 2px solid rgb(189, 80, 189);
+}
+
+.naglowek {
+  width: 740px;
+  height: 50px;
+  border: 2px solid rgb(8, 8, 212);
+}
+
+.nawigacja {
+  width: 740px;
+  height: 35px;
+  border: 2px solid red;
+}
+
+.nawigacja-boczna {
+  width: 160px;
+  height: 100px;
+  border: 2px solid red;
+}
+
+.foot {
+  width: 740px;
+  height: 80px;
+  border: 2px solid black;
+}
+
+.art {
+  width: 465px;
+  height: 280px;
+  border: 2px solid green;
+}
+
+.art-title {
+  width: 435px;
+  height: 50px;
+  border: 2px solid rgb(8, 8, 212);
+}
+
+.seccja1 {
+  width: 465px;
+  height: 100px;
+  border: 2px solid yellow;
+}
+
+.seccja2 {
+  width: 465px;
+  height: 120px;
+  border: 2px solid yellow;
+}
+
+.colo-head {
+  color: rgb(8, 8, 212);
+  font-size: 24px;
+}
+
+.colo-nav {
+  color: red;
+  font-size: 24px;
+}
+
+.main-aside {
+  color: rgb(189, 80, 189);
+  font-size: 24px;
+}
+
+.color-art {
+  color: rgb(7, 138, 7);
+  font-size: 24px;
+}
+
+.color-sekcji {
+  color: yellow;
+  font-size: 24px;
+}
+
+.color-foot {
+  color: black;
+  font-size: 24px;
+}
+
+.div-przyklad {
+  background: rgb(48, 47, 47);
+  color: aliceblue;
+  float: left;
+  margin-right: 25px;
+  padding-top: 25px;
+}
+
+.div-przyklad2 {
+  background: rgb(48, 47, 47);
+  color: aliceblue;
+  float: left;
+  margin-right: 25px;
+  padding-top: 5px;
+}
+
+.div-end {
+  clear: both;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+}
+
+.article-coments {
+  color: aquamarine;
+  font-size: 14px;
+}
+
+.user-name {
+  color: black;
+}
+
+.user-coment {
+  color: blue;
+}
+
+.wrapper {
+  width: 700;
+  padding-left: 20px;
+}
