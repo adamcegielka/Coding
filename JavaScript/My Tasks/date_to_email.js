@@ -1,7 +1,7 @@
 // Email sending details
 
 let emailTitle = "Software Testing Course";
-console.log("Title:", temailTitle);
+console.log("Title:", emailTitle);
 
 let sender = "userSender@example.com";
 console.log("Sender:", sender);
