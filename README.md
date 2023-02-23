@@ -6,6 +6,7 @@ The material collected here was written by me during the courses I took and is i
 
 ## MySQL
 > My solutions to the tasks from the "Software Tester" lesson on SDAcademy
+
 > In the file Queries_SQL.pdf I described what are the meanings of queries in MySQL
 
 ## HTML5, CSS3
