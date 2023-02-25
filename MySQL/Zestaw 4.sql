@@ -59,7 +59,7 @@ UPDATE employees SET phone_number = 'Not available', commission_pct = '0.8' WHER
 
 -- 8. Napisz zapytanie które zamieni numer telefonu na informację “Nie dostępny” dla wszystkich
 --    pracowników departamentu 80 którzy mają premię w wysokości poniżej 20%.
-UPDATE employees SET phone_number = 'Not available' WHERE department_id = 80 AND commission_pct < 1.2;
+UPDATE employees SET phone_number = 'Not available' WHERE department_id = 80 AND commission_pct < 0.2;
 
 -- 9. Napisz zapytanie które usunie dane pracownika: William Gietz.
 DELETE FROM employees WHERE first_name LIKE 'William' AND last_name LIKE 'Gietz';
