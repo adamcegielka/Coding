@@ -9,6 +9,12 @@ SELECT first_name, last_name, job_id FROM employees WHERE NOT job_id = 'IT_PROG'
 
 -- 4. Wyświetl datę systemową.
 SELECT SYSDATE();
+SELECT NOW();
+-- --
+SELECT CURDATE();
+SELECT CURTIME();
+SELECT DAYNAME(NOW());
+SELECT DAYOFYEAR(NOW());
 
 -- 5. Wyświetl imiona, nazwiska i daty zatrudnienia pracowników.
 SELECT first_name, last_name, hire_date FROM employees WHERE hire_date IS NOT NULL;
