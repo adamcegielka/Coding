@@ -7,11 +7,11 @@ public class Lesson07PobieranieDanychUzytkownika {
         String name = scanner.nextLine();
         System.out.println("Hello " + name + "!");
     }
+}
 
+/*
+ Działanie matematyczne:
 
-    // Działanie matematyczne
-
- /*
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number:");
@@ -19,18 +19,4 @@ public class Lesson07PobieranieDanychUzytkownika {
         int result = number * number;
         System.out.println(number + " squared is: " + result);
     }
- */
-
-    // Obliczenie ile użytkownik ma lat
-
- /*
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your year of birth:");
-        int dateBirth = scanner.nextInt();
-        int yearNow = 2023;
-        int result = yearNow - dateBirth;
-        System.out.println("You are " + result + " years old");
-    }
- */
-}
+*/

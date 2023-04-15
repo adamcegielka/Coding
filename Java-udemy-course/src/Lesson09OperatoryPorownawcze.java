@@ -16,12 +16,14 @@ public class Lesson09OperatoryPorownawcze {
     }
 }
 
-// OPERATORY PORÓWNANIA
 /*
+OPERATORY PORÓWNANIA:
+
 ==   równy
 !=   różny
 >=   większy lub równy
 <=   mniejszy lub równy
 >    większy
 <    mniejszy
+
  */
