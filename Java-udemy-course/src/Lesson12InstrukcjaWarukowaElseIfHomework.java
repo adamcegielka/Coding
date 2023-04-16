@@ -13,6 +13,8 @@ public class Lesson12InstrukcjaWarukowaElseIfHomework {
             System.out.println("Jesteś za stary");
         } else if (age >= 18) {
             System.out.println("Jesteś pełnoletni");
+        } else if (age < 1) {
+            System.out.println("Wpisz poprawną wartość!");
         } else if (age < 13) {
             System.out.println("Jesteś jeszcze dzieckiem");
         } else  {
