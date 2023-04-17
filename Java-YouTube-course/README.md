@@ -48,5 +48,22 @@
 ## Useful sites:
 - [codewars](https://www.codewars.com/users/AdamCegielka)
 - [testelka: Java dla testerów](https://testelka.pl/kurs/java-dla-testerow/#lekcje)
+- [Quality Island: Java dla testerów](https://www.youtube.com/watch?v=PqRHjhNJ8jA&list=PLAoOkePoA0Pt1PN5JiPFI3RXbcw-zd2Mu&index=1)
+- [Zajavka.pl: Java w Pigułce](https://www.youtube.com/watch?v=OXu1wlo0OZk&list=PLcr3jxpNXo4Gh_WCkEK992cxERXaQp-57)
 - [Kurs programowania Java](https://www.samouczekprogramisty.pl/kurs-programowania-java/)
 - [w3schools](https://my-learning.w3schools.com/tutorial/java)
+
+## Tips for IntelliJ IDEA:
+:small_orange_diamond: `psvm` or `main` :  
+```java
+public static void main(String[] args) {
+
+ }
+```
+:small_orange_diamond: `sout` :  
+```java
+System.out.println();
+```
+:small_orange_diamond: `SHIFT + F10` : Run  
+:small_orange_diamond: `CTRL + D` : copying the whole line of code  
+:small_orange_diamond: `ALT + J` : selects the same text again, the possibility of editing several identical texts  
