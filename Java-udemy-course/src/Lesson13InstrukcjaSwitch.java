@@ -1,4 +1,4 @@
-public class Lesson13Switch {
+public class Lesson13InstrukcjaSwitch {
     public static void main(String[] args) {
 
         String dish = "Dessert";
