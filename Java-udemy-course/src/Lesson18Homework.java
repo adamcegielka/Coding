@@ -22,13 +22,15 @@ public class Lesson18Homework {
         // -------------------------------------------------
 
         // second - my solution
-        int[] numbers = new int[] {1, 3, 5};
+        int[] number = new int[] {1, 3, 5};
 
-        System.out.println(numbers[2]);
-        System.out.println(numbers[1]);
-        System.out.println(numbers[0]);
+        System.out.println(number[2]);
+        System.out.println(number[1]);
+        System.out.println(number[0]);
 
         // second - dissolution of trainer
+        int[] numbers = new int[] {1, 3, 5, 7, 0};
+
         for (int i = 0; i < (numbers.length/2); i++) {
             int temp = numbers[1];                          // dla i = 0  1  // i = 1  3
             numbers[i] = numbers[numbers.length - 1 - i];   // 4-> 0         // 3 => 7
