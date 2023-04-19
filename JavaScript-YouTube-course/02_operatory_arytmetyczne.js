@@ -35,7 +35,6 @@ console.log("number = " + number); // wynik 3
 number %= 2;                       // 3 % 2
 console.log("number = " + number); // wynik 1
 
-
 // dodawania wartości o jeden -> postinkrementacja - wykonuje sie później
 var i = 1;
 i++;
