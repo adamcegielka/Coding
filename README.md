@@ -5,12 +5,11 @@ The material collected here was written by me during the courses I took and is i
 ![HTML5](https://img.shields.io/badge/-HTML5-3776AB?style=flat&logo=HTML5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/-CSS3-3776AB?style=flat&logo=CSS3&logoColor=white)
 <br>
-My codes written during the "Web Developer Tworzenie Stron od zera do Mastera
-" lesson with Udemi
+My codes written during the "Web Developer Tworzenie Stron od zera do Mastera" lesson with Udemi
 <br><br>
 ![Java](https://img.shields.io/badge/-Java-3776AB?style=flat&logo=java&logoColor=white)
 <br>
-My codes written during the "Tester Oprogramowania" lesson with Udemi
+My codes written during the lesson "Tester Oprogramowania" with Udemi and "Kurs Java dla początkujących" with YouTube
 <br><br>
 ![JavaScript](https://img.shields.io/badge/-JavaScript-3776AB?style=flat&logo=JavaScript&logoColor=white)
 <br>
