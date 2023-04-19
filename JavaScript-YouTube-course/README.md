@@ -31,3 +31,13 @@
 - [Kurs JavaScript dla superbohaterów](https://kursjs.pl/)
 - [w3schools](https://my-learning.w3schools.com/tutorial/js)
 - [GitHub](https://github.com/LinkedInLearning/javascript-essential-training-2832077)
+
+## Tips for VSC
+- `SHIFT + ALT + ↓/↑` -> copy line up/down 
+- `ALT + ↓/↑` -> moving the whole line 
+- `SHIFT + CTRL + K` -> delete line  
+- `CTRL + F` -> find  
+- `CTRL + B` -> left sidebar  
+- `CTRL + SHIFT + R` -> Refactor ...
+- `SHIFT + ALT + F` -> code formatting
+- `CTRL + SPACE` -> suggestions
