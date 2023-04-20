@@ -38,5 +38,16 @@ public class Lesson22ObiektyHomework {
         pawlak.login();
         pawlak.enterEmailPhone();
 
+        // Table of all students
+        Lesson20KlasaUczen[] student = new Lesson20KlasaUczen[3];
+        student[0] = wawelski;
+        student[1] = kowal;
+        student[2] = pawlak;
+
+        for (int i = 0; i < student.length; i++) {
+            student[i].subscribe();
+            student[i].login();
+            student[i].enterEmailPhone();
+        }
     }
 }
