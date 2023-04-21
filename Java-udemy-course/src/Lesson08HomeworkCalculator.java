@@ -14,9 +14,9 @@ public class Lesson08HomeworkCalculator {
         int mod = secondNumber % firstNumber;
 
         System.out.println("The result of addition is: " + addition);
-        System.out.println("The result of subraction is:: " + subraction);
-        System.out.println("The result of multiplication is:: " + multiplication);
-        System.out.println("The result of division is:: " + division);
-        System.out.println("The result of mod is:: " + mod);
+        System.out.println("The result of subraction is: " + subraction);
+        System.out.println("The result of multiplication is: " + multiplication);
+        System.out.println("The result of division is: " + division);
+        System.out.println("The result of mod is: " + mod);
     }
 }
