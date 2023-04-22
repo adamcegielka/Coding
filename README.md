@@ -20,3 +20,7 @@ My codes were written during the lesson "Kurs JavaScript - programowanie" on the
 My solutions to the tasks from the "Software Tester" lesson on SDAcademy
 
 In the file Queries_SQL.pdf I described what are the meanings of queries in MySQL
+<br><br>
+![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white)
+<br>
+My exercise in Postman
