@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory atrybutów [attribute="value" i]</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+      [class="foo-bar" i] {
+        color: green;
+        font-weight: bold;
+        border: 2px solid green;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 40 - Selektory atrybutów [attribute="value" i]</h2>
+    <h3>
+      i Wybiera elementy gdy wartość atrybutu jest jak z string ignorując
+      również wielkość liter
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <p class="Foo-Bar">zmieniony paragraf</p>
+      <p class="fooBar">brak zmian</p>
+      <div class="foO-BAR">zmieniony paragraf</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">[class="foo-bar" i]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: green;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; font-weight: bold;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid green;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; padding: 3px;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;p class=<span class="wazne">"Foo-Bar"</span>&gt;zmieniony
+      paragraf&lt;/p&gt;<br />
+      &lt;p class="fooBar"&gt;brak zmian&lt;/p&gt;<br />
+      &lt;div class=<span class="wazne">"foO-BAR"</span>&gt;zmieniony
+      paragraf&lt;/div&gt;
+    </div>
+    <br /><br />
+  </body>
+</html>

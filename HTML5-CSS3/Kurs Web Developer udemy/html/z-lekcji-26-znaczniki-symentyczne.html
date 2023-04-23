@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Znaczniki Semantyczne</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="javascript.js" type="text/js" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <h1>Lekcja 26 - Znaczniki Semantyczne</h1>
+    <!-- header -->
+    <header>
+      <fieldset class="naglowek">
+        <legend class="colo-head">header</legend>
+        Nagłówek Danego elementu - strony, artykułu, komentarza
+      </fieldset>
+    </header>
+    <!-- nawigacja -->
+    <nav>
+      <fieldset class="nawigacja">
+        <legend class="colo-nav">nav</legend>
+        Nawigacja - Menu głwne strony - może być w znaczniku &nbsp; &lt; header
+        &gt;
+      </fieldset>
+    </nav>
+    <table class="tab-syment">
+      <tr>
+        <td class="tdarticle">
+          <!-- main -->
+          <fieldset class="tresc">
+            <legend class="main-aside">main</legend>
+            <!-- article -->
+            <fieldset class="art">
+              <legend class="color-art">article</legend>
+              <!-- header -->
+              <fieldset class="art-title">
+                <legend class="colo-head">header</legend>
+                Tytuł artykułu &nbsp; - &nbsp; używając &nbsp; &lt; header
+                &gt;&lt; p &gt; &nbsp; lub tylko &nbsp; &lt; p &gt;
+              </fieldset>
+              <br />
+              &lt; textarea &gt; ... &lt; /textarea &gt; &nbsp; - ramka:
+              <br /><br />
+              <div>
+                <textarea class="div-przyklad" cols="25" rows="7">
+        <fieldset> 
+          Ramka 
+        </fieldset>
+                </textarea>
+              </div>
+              <div>
+                <textarea class="div-przyklad" cols="25" rows="7">
+        <legend> 
+          Opis ramki 
+        </legend> 
+                </textarea>
+              </div>
+              <div class="div-end"></div>
+            </fieldset>
+            <br />
+            <!-- section 1 -->
+            <fieldset class="seccja1">
+              <legend class="color-sekcji">section 1</legend>
+              &lt; div &gt; &nbsp; - układ obok siebie w CSS:<br />
+              float: left; &nbsp; - szeregujący <br />
+              clear: both; &nbsp; - czyszczący
+            </fieldset>
+            <!-- section 2 -->
+            <fieldset class="seccja2">
+              <legend class="color-sekcji">section 2</legend>
+              &lt; section &gt; <br />
+              &nbsp;&nbsp;&nbsp; &lt; h1 &gt; Ostatnie opinie &lt; /h1 &gt;<br />
+              &nbsp;&nbsp;&nbsp; &lt; article &gt; ... &lt; /article &gt;<br />
+              &nbsp;&nbsp;&nbsp; &lt; article &gt; ... &lt; /article &gt;<br />
+              &lt; /section &gt; <br />
+            </fieldset>
+            <!-- section 3 -->
+            <fieldset class="seccja2">
+              <legend class="color-art">section / article</legend>
+              &lt; article &gt; <br />
+              &nbsp;&nbsp;&nbsp; &lt; h1 &gt; Nowy produkt w sorzedaży &lt; /h1
+              &gt;<br />
+              &nbsp;&nbsp;&nbsp; &lt; p &gt; Fragment treści artykułu &lt; /p
+              &gt;<br />
+              &nbsp;&nbsp;&nbsp; &lt; p &gt;&lt; a href="/sklep.html" &gt;
+              Zobacz więcej &lt; /a &gt;&lt; /p &gt;<br />
+              &lt; /article &gt; <br />
+            </fieldset>
+            <br />Data do napisanania komentarza:&nbsp; &lt; time &gt;
+            &nbsp;lub&nbsp; &lt; footer &gt; &lt; p &gt; &lt; time &gt;<br />
+            &lt; time datetime="20221-02-01" &gt; 1 luty 2022r. &lt; /time &gt;
+          </fieldset>
+        </td>
+        <td class="tdaside">
+          <!-- aside -->
+          <fieldset class="lege">
+            <legend class="main-aside">aside</legend>
+            Kategorie, reklamy, widget
+            <!-- nav -->
+            <nav>
+              <fieldset class="nawigacja-boczna">
+                <legend class="colo-nav">nav</legend>
+                Nawigacja boczna
+              </fieldset>
+              <br />
+              Inne znaczniki:
+              <br />
+              <br />
+              & n b s p ; &nbsp; - spacja
+              <br />
+              & l t ; &nbsp; -&nbsp; &lt;
+              <br />
+              & g t ; &nbsp; -&nbsp; &gt;
+              <br />
+              & c o p y ; &nbsp; -&nbsp; &copy;
+              <br />
+              &lt; div &gt;
+              <br />
+              &lt; span &gt;
+              <br />
+              &lt; figure &gt; &nbsp; -&nbsp; do zdjęć
+              <br />
+              &lt; figcaption &gt; &nbsp; -&nbsp; etykieta foto
+            </nav>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+    <!-- footer -->
+    <footer>
+      <fieldset class="foot">
+        <legend class="color-foot">footer</legend>
+        Stopka Strony
+        <br />
+        <br />
+        Można też całą layout zbudować w &nbsp; &lt; div id="wrapper" &gt; ...
+        &lt; /div &gt; &nbsp; aby wyśrodkować całość
+      </fieldset>
+    </footer>
+  </body>
+</html>

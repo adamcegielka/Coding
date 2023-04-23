@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 42- Selektory atrybutów - Ćwiczenie</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      [href="home.html"] {
+        background: red;
+      }
+      a[data-link] {
+        background: green;
+      }
+      [class*="bold"] {
+        font-weight: bold;
+      }
+      [class*="small"] {
+        font-size: 25px;
+      }
+      [class^="red"] {
+        font-size: 23px;
+      }
+      [class$="italic"] {
+        font-style: italic;
+      }
+      [class|="ORANGE"] {
+        border: 4px dotted orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 42 - Selektory atrybutów - Zadanie</h2>
+
+    <br />
+    <ul>
+      <li><a class="red-link" href="home.html">Strona Główna</a></li>
+      <li>
+        <a data-link="bold link" class="ORANGE" href="about.html"
+          >O nas trochę</a
+        >
+      </li>
+      <li>
+        <a class="small-text bold italic" href="tos.html">TOS To Dobre</a>
+      </li>
+    </ul>
+
+    <br /><br />
+  </body>
+</html>

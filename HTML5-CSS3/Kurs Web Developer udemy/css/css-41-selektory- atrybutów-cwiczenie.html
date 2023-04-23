@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 41- Selektory atrybutów - Ćwiczenie</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      [data-color] {
+        background-color: red;
+        border: 2px dotted darkred;
+        font-weight: bold;
+      }
+      [data-color="blue"] {
+        background-color: blueviolet;
+        border: 2px solid darkblue;
+      }
+      [data-green="light" i] {
+        background-color: lawngreen;
+      }
+      [data-green="dark" i] {
+        background-color: green;
+      }
+      [class*="str"] {
+        background-color: orange;
+      }
+      [class~="small-text"] {
+        font-size: 30px;
+      }
+      [class^="small-text"] {
+        border: 15px solid darkgoldenrod;
+      }
+      [class$="box"] {
+        padding: 15px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 41 - Selektory atrybutów - Ćwiczenie</h2>
+    <h3></h3>
+    <br />
+    <div data-color>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic quas et
+      ipsum magnam. Atque odit eos ipsam repudiandae quia?
+    </div>
+    <div data-green="dark">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic quas et
+      ipsum magnam. Atque odit eos ipsam repudiandae quia?
+    </div>
+    <div data-green="light">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic quas et
+      ipsum magnam. Atque odit eos ipsam repudiandae quia?
+    </div>
+    <p data-color="blue">Lorem ipsum dolor sit amet.</p>
+    <p class="small-text str box">Lorem ipsum dolor sit amet.</p>
+
+    <br /><br />
+  </body>
+</html>

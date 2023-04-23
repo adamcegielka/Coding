@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabele - Ćwiczenie</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="javascript.js" type="text/js" />
+    <link rel="icon" href="img/html5.png" type="img/png" />
+    <style>
+      td,
+      table {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Tabela z ćwiczenia
+      </caption>
+      <thead>
+        <tr>
+          <td class="tabelka">Nazwa</td>
+          <td class="tabelka">Nazwa</td>
+          <td class="tabelka">Nazwa</td>
+          <td class="tabelka">Nazwa</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>100</td>
+          <td colspan="2">200</td>
+          <!-- kolumna pusta - <td>300</td>-->
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td rowspan="2">200</td>
+          <td>300</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>200</td>
+          <!-- kolumna pusta - <td>300</td>-->
+          <td>400</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

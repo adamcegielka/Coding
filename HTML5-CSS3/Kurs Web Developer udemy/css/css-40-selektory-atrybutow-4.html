@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory atrybutów [attribute~="value"]</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+      div[class~="medium-text"] {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 40 - Selektory atrybutów [attribute~="value"]</h2>
+    <h3>
+      ~= Wybiera element gdy w atrybucie gdziekolwiek znajduje się <br />string
+      w liście części odzielonych spacjami
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <div class="color-yellow small-text">Standardowy text</div>
+      <div class="color-dark medium-text grey-border">Działający atrybut</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; div<span class="wazne">[class~="medium-text"]</span>
+      {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; font-size: 20px;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; font-weight: bold;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; text-decoration: underline;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;div class="color-yellow small-text"&gt;Standardowy text&lt;/div&gt;<br />
+      &lt;div class="color-dark
+      <span class="wazne">medium-text</span> grey-border"&gt;Działający
+      atrybut&lt;/div&gt;<br />
+    </div>
+    <br /><br />
+  </body>
+</html>

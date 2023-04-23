@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 44 - Pseudoklasy :last-child</title>
+    <style>
+      body {
+        background-color: #2e2e2e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .znaczniki {
+        color: rgb(14, 159, 250);
+      }
+
+      .atrybuty {
+        color: lightskyblue;
+      }
+
+      .atrybuty-name {
+        color: orangered;
+      }
+
+      .css-info {
+        color: green;
+      }
+
+      p:last-child {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 44 - Pseudoklasy :last-child</h2>
+    <h3>- Pierwszy element z grupy sąsiadujacych</h3>
+    <br />
+    <div style="width: 300px">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div style="float: left">
+      &lt;<span class="znaczniki">style</span>&gt;<br />
+      <span class="css-info">/* wybiera ostatni element */</span><br />
+      &nbsp;&nbsp;&nbsp;<span class="atrybuty">p:last-child</span> {
+      <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br />
+      &nbsp;&nbsp;&nbsp;}<br />
+      &lt;/<span class="znaczniki">style</span>&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div style="float: left; padding-left: 70px">
+      &lt;div&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;<br />
+      &lt;/div&gt;
+    </div>
+    <div style="clear: both"></div>
+    <br /><br />
+  </body>
+</html>

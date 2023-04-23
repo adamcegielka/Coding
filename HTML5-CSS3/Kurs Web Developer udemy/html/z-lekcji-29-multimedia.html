@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 29 - Mulimedia</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Obrazek -->
+      <div style="float: left">
+        <h3>Obrazek:</h3>
+        <img
+          src="img/html5.png"
+          alt="Zdięcie Html 5"
+          title="Html 5"
+          width="100"
+        />
+      </div>
+      <div style="float: left; padding-left: 40px">
+        <h3>Przez html:</h3>
+        <img
+          src="https://images.unsplash.com/photo-1601039727490-458d3e7f2799?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+          alt="Zdięcie Html 5"
+          title="Html 5"
+          width="100"
+        />
+      </div>
+      <div style="clear: both"></div>
+      <br />
+      <!-- Obrazek jako łącze -->
+      <div>
+        <h3>Zdjęcie jako łącze:</h3>
+        <a href="#"><img src="img/html5.png" alt="Zdjęcie" width="100" /></a>
+      </div>
+      <br />
+      <!--Obrazek z opisem <figure> -->
+      <div>
+        <h3>
+          Znacznik &lt; figure &gt; razem z &lt; figcaption &gt; używane są aby
+          dodać opis obrazka:
+        </h3>
+        <figure>
+          <img src="img/html5.png" alt="Zdjęcie" width="100" />
+          <figcaption>Podpis obrazka</figcaption>
+        </figure>
+      </div>
+      <br />
+      <!-- Obrazek responsywny <picture> -->
+      <div>
+        <h3>
+          &lt; picture &gt; - Obrazki mogą być responsywne w zależnosci od
+          wielkości ekranu urządzenia:
+        </h3>
+        <p>
+          &nbsp;&lt; picture &gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt; source media=" (min-width:1100px) "
+          srcset="large-image.jpg" &gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt; source media=" (min-width:700px) "
+          srcset="medium-image.jpg" &gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt; source media=" (min-width:450px) "
+          srcset="small-image.jpg" &gt;<br />
+          &nbsp;&lt; /picture &gt;
+        </p>
+      </div>
+      <div>
+        <picture>
+          <source
+            media="(min-width:600px)"
+            srcset="
+              https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80
+            "
+          />
+          <img src="img/html5.png" alt="Auto" />
+        </picture>
+      </div>
+      <br />
+      <!-- Dozanie Video -->
+      <div>
+        <h3>Dodanie pliku video &nbsp;&lt; video &gt;</h3>
+        <p>
+          &nbsp;&lt; video controls &gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt; source type="video/mp4" <br />
+          &nbsp;&nbsp;&nbsp; src="http://scieska/filmu.mp4" &gt;<br />
+          &nbsp;&nbsp;&nbsp; Tekst jeśli nie można otworzyć wideo<br />
+          &nbsp;&lt; /video &gt;
+        </p>
+        <p>
+          np.: <br />
+          &nbsp;&lt; style &gt;<br />
+          &nbsp;&nbsp;&nbsp; video { <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 300px <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height: 178px<br />
+          &nbsp;&nbsp;&nbsp; } <br />
+          &nbsp;&lt; /style &gt;
+        </p>
+      </div>
+      <div>
+        <video
+          type="video/mp4"
+          style="width: 400px"
+          controls
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        ></video>
+      </div>
+    </div>
+    <br /><br />
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 32 - Formularze - Zadanie</title>
+    <link rel="stylesheet" href="style-30-formularze.css" type="text/css" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <h2>Lekcja 32 - Formularze - Zadanie</h2>
+    <form action="new_article.php" method="post">
+      <fieldset>
+        <legend>Formularz wysyłki artykułu</legend>
+        <p>
+          <label for="title">Tytuł artykułu:</label>
+          <input type="text" name="title" id="title" />
+        </p>
+        <p>
+          <label for="content">Treść artykułu:</label><br />
+          <textarea name="content" id="content" cols="50" rows="4"></textarea>
+        </p>
+        <p>
+          <label for="publication-date">Data publikacju:</label>
+          <input
+            type="datetime-local"
+            name="publication-date"
+            id="publication-date"
+          />
+        </p>
+        <p>
+          Typ publikacji:
+          <input type="radio" name="type" value="news" id="news" />
+          <label for="news">Wiadomość</label>
+          <input type="radio" name="type" value="artycle" id="artycle" />
+          <label for="artycle">Artykuł</label>
+          <input type="radio" name="type" value="review" id="review" />
+          <label for="rewiev">Recenzja</label>
+        </p>
+        <p>
+          Tagi:
+          <input type="checkbox" name="tag" value="journey" id="journey" />
+          <label for="journey">Podróże</label>
+          <input type="checkbox" name="tag" value="lifestyle" id="lifestyle" />
+          <label for="lifestyle">Lifestyle</label>
+        </p>
+        <p>
+          <label for="category">Kategirie</label>
+          <select name="category" id="category">
+            <option value="pierwsz">Pierwsza</option>
+            <option value="druga">Druga</option>
+          </select>
+        </p>
+        <p>
+          <button type="reset">Resetuj</button>
+          <button type="submit">Wyśli</button>
+        </p>
+      </fieldset>
+    </form>
+    <script src="javascript.js"></script>
+  </body>
+</html>

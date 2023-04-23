@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 30 - Formularze</title>
+    <link rel="stylesheet" href="style-30-formularze.css" type="text/css" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Formularz z PHP -->
+      <div>
+        <h2>Formularze</h2>
+        <form action="login.php" method="post">
+          <p>
+            <label for="input_name">Nazwa użytkownika:</label> <br />
+            <input name="user_name" id="input_name" type="text" required />
+          </p>
+          <p>
+            <label
+              >Hasło: <br />
+              <input name="password" type="text" required />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Zaloguj</button>
+          </p>
+        </form>
+      </div>
+      <br />
+      <!-- Formularz z PHP - code -->
+      <div>
+        &lt;form action=<span style="color: #f9f">"login.php"</span>
+        method=<span style="color: #f9f">"post"</span>&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;p&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+          style="color: #f9f"
+          >"input_name"</span
+        >&gt;Nazwa użytkownika:&lt;/label&gt; &lt;br /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name=<span
+          style="color: #f9f"
+          >"user_name"</span
+        >
+        id=<span style="color: #f9f">"input_name"</span> type=<span
+          style="color: #f9f"
+          >"text"</span
+        >
+        required /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;p&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt; Hasło: &lt;br /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+        name=<span style="color: #f9f">"password"</span> type=<span
+          style="color: #f9f"
+          >"text"</span
+        >
+        required /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;p&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type=<span
+          style="color: #f9f"
+          >"submit"</span
+        >&gt;Zaloguj&lt;/button&gt;<br />
+        &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+        &lt;/form&gt;<br />
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład 1 -->
+      <div>
+        <i
+          >Dodając do &lt; imput &gt; wartość value="Nazwa" wyświetli się w
+          polu</i
+        >
+        <form action="login.php" method="post">
+          <p>
+            <label for="input_name">Nazwa użytkownika:</label> <br />
+            <input
+              name="user_name"
+              id="input_name"
+              type="text"
+              value="Nazwa"
+              required
+            />
+          </p>
+          <p>
+            &lt;input name=<span style="color: #f9f">"user_name"</span> id=<span
+              style="color: #f9f"
+              >"input_name"</span
+            >
+            type=<span style="color: #f9f">"text"</span> value=<span
+              style="color: #f9f"
+              >"Nazwa"</span
+            >
+            required /&gt;
+          </p>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład 2 -->
+      <div>
+        <i
+          >Dodając do &lt; imput &gt; wartość placeholder="Wpisz imię" wyświetli
+          się w polu</i
+        >
+        <form action="login.php" method="post">
+          <p>
+            <label for="input_name">Nazwa użytkownika:</label> <br />
+            <input
+              name="user_name"
+              id="input_name"
+              type="text"
+              placeholder="Wpisz imię"
+              required
+            />
+          </p>
+          <p>
+            &lt;input name=<span style="color: #f9f">"user_name"</span> id=<span
+              style="color: #f9f"
+              >"input_name"</span
+            >
+            type=<span style="color: #f9f">"text"</span> placeholder=<span
+              style="color: #f9f"
+              >"Wpisz imię"</span
+            >
+            required /&gt;
+          </p>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład 3 -->
+      <div>
+        <i
+          >Dodając do &lt; imput &gt; wartość placeholder="Wpisz imię" wyświetli
+          się w polu</i
+        >
+        <form action="login.php" method="post">
+          <p>
+            <label for="input_name">Nazwa użytkownika:</label> <br />
+            <input
+              name="country"
+              id="input_name"
+              type="text"
+              placeholder="Wpisz kraj"
+              required
+            />
+          </p>
+          <p>
+            &lt;input name=<span style="color: #f9f">"country"</span> id=<span
+              style="color: #f9f"
+              >"input_name"</span
+            >
+            type=<span style="color: #f9f">"text"</span> placeholder=<span
+              style="color: #f9f"
+              >"Wpisz kraj"</span
+            >
+            required /&gt;
+          </p>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład 4 -->
+      <div>
+        <i>Okreslenie minimalnej i maksymalnej długości wpisanego tekstu:</i>
+        <form action="login.php" method="post">
+          <p>
+            <label for="input_name">Nazwa użytkownika:</label> <br />
+            <input
+              name="country"
+              id="input_name"
+              type="text"
+              minlength="3"
+              maxlength="10"
+              required
+            />
+          </p>
+          <p>
+            &lt;input name=<span style="color: #f9f">"username"</span>
+            type=<span style="color: #f9f">"text"</span> minlength=<span
+              style="color: #f9f"
+              >"3"</span
+            >
+            maxlength=<span style="color: #f9f">"10"</span>
+            required /&gt;
+          </p>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- Przykład - Objaśnienia -->
+      <div>
+        <p>
+          &lt; form action=<span style="color: #f9f">"login.php"</span>
+          method=<span style="color: #f9f">"post"</span> &gt;&lt; /form &gt;
+        </p>
+        <h4>
+          <span style="color: goldenrod">action</span> - atrybut określający
+          adres, gdzie ma być wysłany formularz
+        </h4>
+        <h4>
+          <span style="color: goldenrod">method</span> - metoda wysyłki
+          formularzu <i>"get"</i> lub <i>"post"</i>, get - domyślnie
+        </h4>
+        <h4>
+          &nbsp;&nbsp;&nbsp; a)
+          <span style="color: goldenrod">post</span> - wysyłanie danych do
+          skrypty w sposób niewidoczny dla użytkownika
+        </h4>
+        <h4>
+          &nbsp;&nbsp;&nbsp; b)
+          <span style="color: goldenrod">get</span> - wysyłanie danych do
+          skryptu poprzez zakodowanie danych URL, domyślna forma
+        </h4>
+        <h4>
+          <span style="color: goldenrod">autocomplete</span> - on/off czy
+          przeglądarka może wypełnić pole podpowiedzi
+        </h4>
+        <h4>
+          <span style="color: goldenrod">novalidate</span> - formularz nie
+          będzie sprawdzony przed wysyłką
+        </h4>
+        <h4>
+          <span style="color: goldenrod">enctype</span> - sposób kodowania tzw
+          MIME-type:
+        </h4>
+        <h4>
+          &nbsp;&nbsp;&nbsp; a)
+          <span style="color: goldenrod"
+            >application/x-www-form-urlencoded</span
+          >
+          - domyślnie
+        </h4>
+        <h4>
+          &nbsp;&nbsp;&nbsp; b)
+          <span style="color: goldenrod">multipart/form-date</span> - używany
+          gdy jest pole input <i>type="file"</i> do wysyłki pliku
+        </h4>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - Dodawanie Pliku-->
+      <div>
+        <h2>Dodawanie pliku</h2>
+        <h4>
+          <span style="color: goldenrod">application/pdf</span> - dokumenty pdf
+        </h4>
+        <h4><span style="color: goldenrod">image/jpeg</span> - obrazek jpge</h4>
+        <h4><span style="color: goldenrod">text/html</span> - plik html</h4>
+        <h4>
+          <span style="color: goldenrod">application/json</span> - JavaScript
+          Object Notation object
+        </h4>
+        <p>
+          &lt; form action=<span style="color: #f9f">"action.php"</span>
+          method=<span style="color: #f9f">"post"</span> enctype=<span
+            style="color: #f9f"
+            >"multipart/form-data"</span
+          >
+          &gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opis pliku: &lt; input name=<span
+            style="color: #f9f"
+            >"username"</span
+          >
+          type=<span style="color: #f9f">"text"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wybierz plik: &lt; input
+          type=<span style="color: #f9f">"file"</span> name=<span
+            style="color: #f9f"
+            >"avatar"</span
+          >
+          accept=<span style="color: #f9f">"image/pn, image/jpeg"</span
+          >&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; button &gt; Zapisz &lt;
+          /button &gt;<br />
+          &lt; /form &gt;
+        </p>
+        <br />
+        <form action="action.php" method="post" enctype="multipart/form-data">
+          Opis pliku: <input name="username" type="text" />&nbsp;&nbsp; Wybierz
+          plik: <input type="file" name="pictures" accept="image/jpeg" />
+          <button>Zapisz</button>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - Tabeli rozbudowanej -->
+      <div>
+        <h2>Tabela rozbudowana</h2>
+        <form action="login.php" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Wpisz email"
+              required
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              name="password"
+              placeholder="Wpisz hasło"
+              required
+            />
+          </p>
+          <p><input type="number" name="age" min="18" max="50" /></p>
+          <p><textarea name="bio"></textarea></p>
+          <p>
+            <button type="submit">Zarejestruj się</button>
+          </p>
+        </form>
+        <br />
+        <p>
+          &lt;form action=<span style="color: #f9f">"login.php"</span>
+          method=<span style="color: #f9f">"post"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;input type=<span style="color: #f9f"
+            >"email"</span
+          >
+          name=<span style="color: #f9f">"email"</span> placeholder=<span
+            style="color: #f9f"
+            >"Wpisz email"</span
+          >
+          required&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;input type=<span style="color: #f9f"
+            >"password"</span
+          >
+          name=<span style="color: #f9f">"password"</span> placeholder=<span
+            style="color: #f9f"
+            >"Wpisz hasło"</span
+          >
+          required&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;input type=<span style="color: #f9f"
+            >"number"</span
+          >
+          name=<span style="color: #f9f">"age"</span> min=<span
+            style="color: #f9f"
+            >"18"</span
+          >
+          max=<span style="color: #f9f">"50"</span>&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;textarea name=<span style="color: #f9f"
+            >"bio"</span
+          >&gt;&lt;/textarea&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;p&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;button
+          type=<span style="color: #f9f">"submit"</span>>Zarejestruj
+          się&lt;/button&gt;<br />
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+          &lt;/form&gt;<br />
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - Resetowanie i przyciski -->
+      <div>
+        <h2>Resetowanie</h2>
+        <form action="script.php">
+          <input type="text" name="username" placeholder="Wpisz" /><br />
+          <input type="reset" value="Resetuj formularz" /><br />
+          <input type="submit" value="Wyślij" />
+        </form>
+        <p>
+          &lt; form action=<span style="color: #f9f">"script.php"</span>
+          method=<span style="color: #f9f">"post"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; input type=<span
+            style="color: #f9f"
+            >"text"</span
+          >
+          name=<span style="color: #f9f">"username"</span>&gt;&lt; br / &gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; input type=<span
+            style="color: #f9f"
+            >"reset"</span
+          >
+          value=<span style="color: #f9f">"Resetuj formularz"</span>&gt;&lt; br
+          / &gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          name=<span style="color: #f9f">"Wyślij"</span>&gt;<br />
+          &lt; /form &gt;
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - radio - wybór jednej opcji -->
+      <div>
+        <h2>radio - Zaznaczenie jednej opcji</h2>
+        <form>
+          <input type="radio" name="color" value="czerwony" id="redColor" />
+          <label for="redColor">Czerwony</label>
+          <input type="radio" name="color" value="niebieski" id="blueColor" />
+          <label for="blueColor">Niebieski</label>
+          <input type="radio" name="color" value="zielony" id="greenColor" />
+          <label for="greenColor">Zielony</label>
+          <input type="submit" value="Wyślij" />
+        </form>
+        <p>
+          &lt;form&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"radio"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"czerwony"</span
+          >
+          id=<span style="color: #f9f">"redColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"redColor"</span
+          >&gt;Czerwony&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"radio"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"niebieski"</span
+          >
+          id=<span style="color: #f9f">"blueColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"blueColor"</span
+          >&gt;Niebieski&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"radio"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"zielony"</span
+          >
+          id=<span style="color: #f9f">"greenColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"greenColor"</span
+          >&gt;Zielony&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          value=<span style="color: #f9f">"Wyślij"</span> /&gt;<br />
+          &lt;/form&gt;
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - checkbox - wybór wielu opcji -->
+      <div>
+        <h2>checkbox - Zaznaczenie wielu opcji</h2>
+        <form>
+          <input type="checkbox" name="color" value="czerwony" id="redColor" />
+          <label for="redColor">Czerwony</label>
+          <input
+            type="checkbox"
+            name="color"
+            value="niebieski"
+            id="blueColor"
+          />
+          <label for="blueColor">Niebieski</label>
+          <input type="checkbox" name="color" value="zielony" id="greenColor" />
+          <label for="greenColor">Zielony</label>
+          <input type="submit" value="Wyślij" />
+        </form>
+        <p>
+          &lt;form&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"checkbox"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"czerwony"</span
+          >
+          id=<span style="color: #f9f">"redColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"redColor"</span
+          >&gt;Czerwony&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"checkbox"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"niebieski"</span
+          >
+          id=<span style="color: #f9f">"blueColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"blueColor"</span
+          >&gt;Niebieski&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"checkbox"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"zielony"</span
+          >
+          id=<span style="color: #f9f">"greenColor"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=<span
+            style="color: #f9f"
+            >"greenColor"</span
+          >&gt;Zielony&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          value=<span style="color: #f9f">"Wyślij"</span> /&gt;<br />
+          &lt;/form&gt;
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - Data - Data i Czas -->
+      <div>
+        <h2>Data - Data i Czas</h2>
+        <form>
+          <input type="date" name="date" />
+          <input type="datetime-local" name="datetime" />
+          <input type="submit" value="Wyslij" />
+        </form>
+        <p>
+          &lt;form&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"date"</span
+          >
+          name=<span style="color: #f9f">"date"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"datetime-local"</span
+          >
+          name=<span style="color: #f9f">"datetime"</span> /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          value=<span style="color: #f9f">"Wyslij"</span> /&gt;<br />
+          &lt;/form&gt;
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Przykład - Wybór koloru -->
+      <div>
+        <h2>Wybór Koloru</h2>
+        <from>
+          <input type="color" name="color" value="#000000" />
+          <input type="submit" value="Wyslij" />
+        </from>
+        <p>
+          &lt;from&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=<span
+            style="color: #f9f"
+            >"color"</span
+          >
+          name=<span style="color: #f9f">"color"</span> value=<span
+            style="color: #f9f"
+            >"#000000"</span
+          >
+          /&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          value=<span style="color: #f9f">"Wyslij"</span> /&gt;<br />
+          &lt;/from&gt;
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Suwak - Telefon - URL -->
+      <div>
+        <h2>Suwak - Telefon - URL</h2>
+        <from>
+          <p><input type="range" name="age" min="18" max="50" step="1" /></p>
+          <p>
+            <input type="tel" placeholder="telefon" name="telephone" />
+          </p>
+          <p>
+            <input
+              type="url"
+              placeholder="strona www"
+              name="url"
+              pattern="https://.*"
+            />
+          </p>
+          <p><input type="submit" value="Wyslij" /></p>
+        </from>
+        <p>
+          &lt;from&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;input type=<span
+            style="color: #f9f"
+            >"rango"</span
+          >
+          name=<span style="color: #f9f">"age"</span> min=<span
+            style="color: #f9f"
+            >"18"</span
+          >
+          max=<span style="color: #f9f">"50"</span> step=<span
+            style="color: #f9f"
+            >"1"</span
+          >&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;input type=<span
+            style="color: #f9f"
+            >"tel"</span
+          >
+          placeholder=<span style="color: #f9f">"telefon"</span> name=<span
+            style="color: #f9f"
+            >"telephone"</span
+          >&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;input type=<span
+            style="color: #f9f"
+            >"url"</span
+          >
+          placeholder=<span style="color: #f9f">"strona www"</span> name=<span
+            style="color: #f9f"
+            >"url"</span
+          >
+          pattern=<span style="color: #f9f">"https://.*"</span
+          >&gt;&lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;input type=<span
+            style="color: #f9f"
+            >"submit"</span
+          >
+          value=<span style="color: #f9f">"Wyslij"</span>&gt;&lt;/p&gt;<br />
+          &lt;/from&gt;<br />
+        </p>
+      </div>
+      <br />
+      <hr />
+      <!-- Select - lista rozwijana -->
+      <div>
+        <div><h2>Select - lista rozwijana</h2></div>
+        <!-- pierwsz opcja -->
+        <div style="float: left">
+          <select name="color">
+            <option value="red">czerwony</option>
+            <option value="green">zielony</option>
+            <option value="blue">niebieski</option>
+          </select>
+          <p>
+            &lt;select name=<span style="color: #f9f">"color"</span>&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"red"</span
+            >&gt;czerwony&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"green"</span
+            >&gt;zielony&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"blue"</span
+            >&gt;niebieski&lt;/option&gt;<br />
+            &lt;/select&gt;
+          </p>
+        </div>
+        <!-- druga opcja -->
+        <div style="float: left; padding-left: 50px">
+          <select name="color">
+            <optgroup label="Główny kolor">
+              <option value="red">czerwony</option>
+              <option value="green">zielony</option>
+              <option value="blue">niebieski</option>
+            </optgroup>
+            <optgroup label="Dodatkowe">
+              <option value="yellow">żółty</option>
+              <option value="black">czarny</option>
+            </optgroup>
+          </select>
+          <p>
+            &lt;select name=<span style="color: #f9f">"color"</span>&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;optgroup label=<span
+              style="color: #f9f"
+              >"Główny kolor"</span
+            >&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"red"</span
+            >&gt;czerwony&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"green"</span
+            >&gt;zielony&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"blue"</span
+            >&gt;niebieski&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/optgroup&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;optgroup label=<span
+              style="color: #f9f"
+              >"Dodatkowe"</span
+            >&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"yellow"</span
+            >&gt;żółty&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=<span
+              style="color: #f9f"
+              >"black"</span
+            >&gt;czarny&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/optgroup&gt;<br />
+            &lt;/select&gt;<br />
+          </p>
+        </div>
+        <div style="clear: both"></div>
+      </div>
+      <br />
+      <hr />
+      <!-- fieldset - grupowanie elementów -->
+      <div>
+        <h2>fieldset - grupowanie elementów</h2>
+        <form action="script.asp" method="post">
+          <fieldset>
+            <legend>Dane osobowe</legend>
+            <label for="userInput">Imię</label>
+            <input type="text" id="userInput" name="username" />
+          </fieldset>
+          <fieldset>
+            <legend>Adres</legend>
+            <p>
+              <label for="streetInput">Ulica</label>
+              <input type="text" id="streetInput" name="street" />
+            </p>
+            <p>
+              <label for="cityInput">Miasto</label>
+              <input type="text" id="cityInput" name="city" />
+            </p>
+          </fieldset>
+        </form>
+        <br />
+        <p>
+          &lt;form action=<span style="color: #f9f">"script.asp"</span>
+          method=<span style="color: #f9f">"post"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;fieldset&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;legend&gt;Dane
+          osobowe&lt;/legend&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for=<span
+            style="color: #f9f"
+            >"userInput"</span
+          >&gt;Imię&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=<span
+            style="color: #f9f"
+            >"text"</span
+          >
+          id=<span style="color: #f9f">"userInput"</span> name=<span
+            style="color: #f9f"
+            >"username"</span
+          >&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/fieldset&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;fieldset&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &lt;legend&gt;Adres&lt;/legend&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for=<span
+            style="color: #f9f"
+            >"streetInput"</span
+          >&gt;Ulica&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=<span
+            style="color: #f9f"
+            >"text"</span
+          >
+          id=<span style="color: #f9f">"streetInput"</span> name=<span
+            style="color: #f9f"
+            >"street"</span
+          >&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for=<span
+            style="color: #f9f"
+            >"cityInput"</span
+          >&gt;Miasto&lt;/label&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=<span
+            style="color: #f9f"
+            >"text"</span
+          >
+          id=<span style="color: #f9f">"cityInput"</span> name=<span
+            style="color: #f9f"
+            >"city"</span
+          >&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/fieldset&gt;<br />
+          &lt;/form&gt;
+        </p>
+      </div>
+      <br />
+      <!-- -------------- Koniec Głównego DIV -------------- -->
+    </div>
+    <br /><br />
+    <script src="javascript.js"></script>
+  </body>
+</html>

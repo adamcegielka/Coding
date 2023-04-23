@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory Atrybutów</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+
+      [data-red] {
+        background-color: red;
+        border: 2px solid darkred;
+      }
+      p[data-green] {
+        background-color: green;
+        border: 2px solid darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Selektory Atrybutów [attribute]</h2>
+    <h3>Wybierają elementy ze względu na wystąpienie danego atrybutu</h3>
+    <br />
+    <div style="width: 300px">
+      <div>Div - Lorem ipsum dolor sit amet.</div>
+      <div data-red>Div - Lorem ipsum dolor sit amet.</div>
+      <p data-green>P - Lorem ipsum dolor sit amet.</p>
+      <div data-green>Div - Lorem ipsum dolor sit amet.</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">[data-red]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: red;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid darkred;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne1">p</span
+      ><span class="wazne">[data-green]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: green;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid darkgreen;<br />
+      &nbsp;&nbsp;&nbsp; } <br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;div&gt;Div - Lorem ipsum dolor sit amet.&lt;/div&gt;<br />
+      &lt;div <span class="wazne">data-red</span>&gt;Div - Lorem ipsum dolor sit
+      amet.&lt;/div&gt;<br />
+      &lt;p <span class="wazne">data-green</span>&gt;P - Lorem ipsum dolor sit
+      amet.&lt;/p&gt;<br />
+      &lt;div <span class="wazne">data-green</span>&gt;Div - Lorem ipsum dolor
+      sit amet.&lt;/div&gt;<br />
+    </div>
+    <br /><br />
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 37 - Selektor - Ćwiczenie</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      header {
+        background-color: black;
+        padding-bottom: 10px;
+      }
+      ul {
+        text-align: center;
+      }
+      li > a {
+        color: aliceblue;
+      }
+      ul li {
+        display: inline;
+        margin-left: 5px;
+      }
+
+      #header-gallery {
+        width: 100%;
+        height: 200px;
+        background: url("https://cdn.pixabay.com/photo/2016/11/14/22/18/beach-1824855_960_720.jpg")
+          no-repeat center;
+        background-size: cover;
+      }
+
+      main {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+      }
+
+      p + ol {
+        background-color: green;
+        padding: 30px;
+      }
+
+      ol ~ article {
+        font-style: italic;
+      }
+
+      .item {
+        font-weight: bold;
+      }
+
+      main h1,
+      main p {
+        font-family: "Courier New", Courier, monospace;
+        color: aqua;
+      }
+      #logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 37 - Selektory - Ćwiczenie</h2>
+
+    <header>
+      <nav>
+        <img
+          src="https://cdn.pixabay.com/photo/2017/01/31/23/42/animal-2028258_960_720.png"
+          alt="logo"
+          id="logo"
+        />
+        <ul>
+          <li><a href="#">Strona główna</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Regulamin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="header-gallery"></header>
+    <main>
+      <article>
+        <h1>Moje wakacje</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ol>
+          <li class="item">Wyspy</li>
+          <li class="item">Góry</li>
+          <li class="item">Lasy</li>
+          <li class="item">Jeziora</li>
+        </ol>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          deserunt minima corrupti molestiae dolore libero rerum voluptatum
+          vitae, culpa odit, ut accusamus. Animi nulla perspiciatis quisquam
+          necessitatibus. Molestias quia, deleniti commodi fuga cum iure
+          mollitia accusantium in similique? Tenetur aspernatur cumque quos
+          sapiente iure, ab, eveniet necessitatibus incidunt debitis, ut
+          obcaecati alias? Totam, ipsam at? Suscipit ea consectetur, hic,
+          molestiae minima neque delectus, quam ad qui dolorum autem eligendi?
+          Aliquam placeat fugiat repellat soluta consequatur, ipsum ipsa
+          aspernatur, dignissimos neque ad ducimus nesciunt assumenda dolorum
+          debitis. Cupiditate cum sit totam at facere placeat dolore molestias
+          quia. Sit placeat cupiditate voluptates.
+        </article>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          deserunt minima corrupti molestiae dolore libero rerum voluptatum
+          vitae, culpa odit, ut accusamus. Animi nulla perspiciatis quisquam
+          necessitatibus. Molestias quia, deleniti commodi fuga cum iure
+          mollitia accusantium in similique? Tenetur aspernatur cumque quos
+          sapiente iure, ab, eveniet necessitatibus incidunt debitis, ut
+          obcaecati alias? Totam, ipsam at? Suscipit ea consectetur, hic,
+          molestiae minima neque delectus, quam ad qui dolorum autem eligendi?
+          Aliquam placeat fugiat repellat soluta consequatur, ipsum ipsa
+          aspernatur, dignissimos neque ad ducimus nesciunt assumenda dolorum
+          debitis. Cupiditate cum sit totam at facere placeat dolore molestias
+          quia. Sit placeat cupiditate voluptates.
+        </article>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          deserunt minima corrupti molestiae dolore libero rerum voluptatum
+          vitae, culpa odit, ut accusamus. Animi nulla perspiciatis quisquam
+          necessitatibus. Molestias quia, deleniti commodi fuga cum iure
+          mollitia accusantium in similique? Tenetur aspernatur cumque quos
+          sapiente iure, ab, eveniet necessitatibus incidunt debitis, ut
+          obcaecati alias? Totam, ipsam at? Suscipit ea consectetur, hic,
+          molestiae minima neque delectus, quam ad qui dolorum autem eligendi?
+          Aliquam placeat fugiat repellat soluta consequatur, ipsum ipsa
+          aspernatur, dignissimos neque ad ducimus nesciunt assumenda dolorum
+          debitis. Cupiditate cum sit totam at facere placeat dolore molestias
+          quia. Sit placeat cupiditate voluptates.
+        </article>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          deserunt minima corrupti molestiae dolore libero rerum voluptatum
+          vitae, culpa odit, ut accusamus. Animi nulla perspiciatis quisquam
+          necessitatibus. Molestias quia, deleniti commodi fuga cum iure
+          mollitia accusantium in similique? Tenetur aspernatur cumque quos
+          sapiente iure, ab, eveniet necessitatibus incidunt debitis, ut
+          obcaecati alias? Totam, ipsam at? Suscipit ea consectetur, hic,
+          molestiae minima neque delectus, quam ad qui dolorum autem eligendi?
+          Aliquam placeat fugiat repellat soluta consequatur, ipsum ipsa
+          aspernatur, dignissimos neque ad ducimus nesciunt assumenda dolorum
+          debitis. Cupiditate cum sit totam at facere placeat dolore molestias
+          quia. Sit placeat cupiditate voluptates.
+        </article>
+      </article>
+    </main>
+
+    <br /><br />
+  </body>
+</html>

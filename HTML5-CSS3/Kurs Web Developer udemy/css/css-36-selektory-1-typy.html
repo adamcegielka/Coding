@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 36 - Selektory typu</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      h4 {
+        font-weight: bold;
+        color: black;
+      }
+      div {
+        background-color: gray;
+      }
+      p {
+        color: red;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Selektory typu</h2>
+    <h3>wybierają wszyskie elementy po nazwie taga</h3>
+    <br />
+    <section style="width: 250px">
+      <h4>Page title</h4>
+      <div>Lorem ipsum dolor sit amet.</div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <section>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">h4</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; font-weight: bold;<br />
+      &nbsp;&nbsp;&nbsp; }<br /><br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">div</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: gray;<br />
+      &nbsp;&nbsp;&nbsp; }<br /><br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">p</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: red;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid red;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </section>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <section>
+      <span><span class="wazne">&lt;h4&gt;</span></span
+      >Page title&lt;/h4&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span><span class="wazne">&lt;div&gt;</span></span
+      >Lorem ipsum dolor sit amet.&lt;/div&gt;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      <span class="wazne">&lt;p&gt;</span>Lorem ipsum dolor sit amet.<span
+        >&lt;/p&gt;</span
+      ><br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      <span class="wazne">&lt;p&gt;</span>Lorem ipsum dolor sit amet.<span
+        >&lt;/p&gt;</span
+      ><br />
+    </section>
+  </body>
+</html>

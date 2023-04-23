@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 31 - Formularze - Ćwiczenie</title>
+    <link rel="stylesheet" href="style-30-formularze.css" type="text/css" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <h2>Lekcja 31 - Formularze - Ćwiczenie</h2>
+    <div class="wrapper">
+      <h4>Formularze:</h4>
+      <!-- Pierwszy Przykład -LOGOWANIE -->
+      <form action="login.php" method="post">
+        <fieldset>
+          <legend>Logowanie</legend>
+          <p>
+            <label
+              >Wpisz Uzytkownika:
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Wpisz nazwę użytkownika"
+              />
+            </label>
+          </p>
+          <p>
+            <label for="password">Wpisz hasło:</label>
+            <input type="password" name="password" id="password" required />
+          </p>
+          <p>
+            <button type="submit">Zaloguj</button>
+            <button type="reset">Resetuj</button>
+          </p>
+        </fieldset>
+      </form>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <!-- Drugi Przykład - REJESTRACJA -->
+      <form action="register.asp" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Rejestracja</legend>
+          <input type="hidden" value="cokolwiek" name="hidden_value" />
+          <p>
+            <label
+              >Wpisz Uzytkownika:
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Wpisz nazwę użytkownika"
+                minlength="5"
+                maxlength="15"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Email:
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Wpisz email"
+              />
+            </label>
+          </p>
+          <p>
+            <label for="password">Wpisz hasło:</label>
+            <input type="password" name="password" id="password" required />
+          </p>
+          <p>
+            <label for="password2">Powtórz hasło:</label>
+            <input type="password2" name="password2" id="password" required />
+          </p>
+          <p>
+            <label for="age">Podaj wiek:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="55"
+              required
+            />
+          </p>
+          <p>
+            <label for="description">Opis urzytkownika:</label><br />
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+          <p>
+            <label for="avatarimg">Wybierz avatar:</label>
+            <input
+              type="file"
+              name="avatar"
+              id="avatarimg"
+              accept="image/png, image/jpg"
+            />
+          </p>
+          <p>
+            Ulubiony kolor:
+            <input type="radio" name="color" value="red" id="red" />
+            <label for="red">Czerwony</label>
+            <input type="radio" name="color" value="blue" id="blue" />
+            <label for="blue">Niebieski</label>
+            <input type="radio" name="color" value="green" id="green" />
+            <label for="green">Zielony</label>
+          </p>
+          <p>
+            Ulubiona marka:
+            <input type="checkbox" name="brend" value="fiat" id="fiat" />
+            <label for="fiat">Fiat</label>
+            <input type="checkbox" name="brend" value="bmw" id="bmw" />
+            <label for="bmw">BMW</label>
+            <input type="checkbox" name="brend" value="audi" id="audi" />
+            <label for="audi">Audi</label>
+          </p>
+          <p>
+            <label for="datetime">Data zakupu:</label>
+            <input type="datetime-local" id="datetime" name="datetime" />
+          </p>
+          <p>
+            <label for="carcolor">Kolor auta:</label>
+            <input type="color" id="catcolor" name="carcolor" />
+          </p>
+          <p>
+            <label for="tel">Telefon:</label>
+            <input type="tel" id="tel" name="telephon" />
+          </p>
+          <p>
+            <label for="distance">Przebieg:</label>
+            <input
+              type="range"
+              id="distance"
+              name="distance"
+              min="1"
+              max="100"
+              step="1"
+            />
+          </p>
+          <p>
+            <label for="url">Strona komisu:</label>
+            <input type="url" id="url" name="urladdres" />
+          </p>
+          <p>
+            <label for="theme">Temlatka forum:</label>
+            <select name="theme" id="theme">
+              <option value="white">Biały</option>
+              <option value="creme">Kremowy</option>
+              <option value="gray">Szary</option>
+              <option value="black">Czarny</option>
+            </select>
+          </p>
+          <p>
+            <button type="submit">Zaloguj</button>
+            <button type="reset">Resetuj</button>
+          </p>
+        </fieldset>
+      </form>
+      <!-- -------------- Koniec Głównego DIV -------------- -->
+    </div>
+    <br />
+    <script src="javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory atrybutów [attribute*="value"]</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+
+      div[class*="foo"] {
+        background-color: red;
+        border: 2px solid darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 40 - Selektory atrybutów [attribute*="value"]</h2>
+    <h3>
+      *= Wybiera element jesli w atrybucie gdziekolwiek znajduje się dany text,
+      <br />wielkosć liter ma znaczenie
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <div class="FoO">Wielkie litery, nie bedzie red</div>
+      <div class="klasa1 foo klasa3">box jest red</div>
+      <div class="foo1234">jest red z foo1234</div>
+      <div class="_box-foooo-1234">jest red z _box-foo-1234</div>
+      <div class="_box-fo0">nie działa z _box-fo0</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; div<span class="wazne">[class*="foo"]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: red;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid darkred;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;div class="FoO"&gt;Wielkie litery, nie bedzie red&lt;/div&gt;<br />
+      &lt;div class=<span class="wazne">"klasa1 foo klasa3"</span>&gt;box jest
+      red&lt;/div&gt;<br />
+      &lt;div class=<span class="wazne">"foo1234"</span>&gt;jest red z
+      foo1234&lt;/div&gt;<br />
+      &lt;div class=<span class="wazne">"_box-foooo-1234"</span>&gt;jest red z
+      _box-foo-1234&lt;/div&gt;<br />
+      &lt;div class="_box-fo0"&gt;nie działa z _box-fo0&lt;/div&gt;<br />
+    </div>
+    <br /><br />
+  </body>
+</html>

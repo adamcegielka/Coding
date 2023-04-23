@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listy uporządkowane</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-link">
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            >developer.mozilla.org</a
+          >
+        </p>
+        <p>
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+            >w3schools.com</a
+          >
+        </p>
+      </div>
+      <h2><u>Listy:</u></h2>
+      <!-- lista uporządkowana -->
+      <h2>Lista nr. 1: <span class="znak">(ol - Lista uporządkowana)</span></h2>
+      <ol>
+        <li>Pierwszy</li>
+        <li>Drugi</li>
+        <li>Trzeci</li>
+        <li>Czwarty</li>
+        <li>Piąty</li>
+      </ol>
+      <!-- Lista od dowolnej liczby -->
+      <h2>
+        Lista nr. 2:
+        <span class="znak">(ol start="6" - Start od numeru 6)</span>
+      </h2>
+      <ol start="6">
+        <li>Szejść</li>
+        <li>Siedem</li>
+        <li>Osiem</li>
+        <li>Dziewięć</li>
+        <li>Dziesięć</li>
+        <!-- Zmiana koleności -->
+        <li value="1">
+          Jeden <span class="znak">(li value="1" - Zmiana kolejności)</span>
+        </li>
+        <li>Dwa</li>
+        <li>Trzy</li>
+      </ol>
+      <!-- Lista nieuporządkowana -->
+      <h2>
+        Lista nr. 3: <span class="znak">(ul - Lista nieuporządkowana)</span>
+      </h2>
+      <ul>
+        <li>Punkt pierwszy</li>
+        <li>Punkt drugi</li>
+        <li>Punkt trzeci</li>
+        <li>Punkt czwarty</li>
+      </ul>
+      <!--  Liczby Rzymskie DUŻE -->
+      <h2>
+        Lista nr. 4:
+        <span class="znak">(ol type="I" - Liczby Rzymskie duże)</span>
+      </h2>
+      <ol type="I">
+        <li>Rztmskie Jeden</li>
+        <li>Rzymskie Dwa</li>
+        <li>Rzymskie Trzy</li>
+        <li>Rzymskie Cztery</li>
+      </ol>
+      <!--  Liczby Rzymskie małe -->
+      <h2>
+        Lista nr5.:
+        <span class="znak">(ol type="i" - Liczby Rzymskie małe)</span>
+      </h2>
+      <ol type="i">
+        <li>rzymskie jeden</li>
+        <li>rzymskie dwa</li>
+        <li>rzymskie trzy</li>
+        <li>rzymskie cztery</li>
+      </ol>
+      <!--  Lista alfabetyczna 'małe litery' -->
+      <h2>
+        Lista nr. 6:
+        <span class="znak"
+          >(ol type="a" - Lista alfabetyczna 'małe litery')</span
+        >
+      </h2>
+      <ol type="a">
+        <li>ananas</li>
+        <li>banan</li>
+        <li>cytryna</li>
+        <li>dynia</li>
+      </ol>
+      <!--  Lista alfabetyczna 'duże litery' -->
+      <h2>
+        Lista nr.7:
+        <span class="znak"
+          >(ol type="A" - Lista alfabetyczna 'duże litery')</span
+        >
+      </h2>
+      <ol type="A">
+        <li>Adam</li>
+        <li>Bartek</li>
+        <li>Cezary</li>
+        <li>Darek</li>
+      </ol>
+      <!--  Lista zagniezdżona -->
+      <h2>Lista Zagnieżdżona</h2>
+      <ol>
+        <li>Pierwszy</li>
+        <li>Drugi</li>
+        <li>Trzeci:</li>
+        <ol type="a">
+          <li>ananas</li>
+          <li>banan</li>
+          <li>cytryna</li>
+        </ol>
+        <li>Czwarty</li>
+      </ol>
+      <!-- Termin i Definicja -->
+      <h2>
+        Lista - Termin i Opis
+        <span class="znak">
+          (dl) - (dt) Termin (/dt) - (dd) Opis (/dd) - (/dl)
+        </span>
+      </h2>
+      <dl>
+        <dt>Pierwszy termin</dt>
+        <dd>Lorem ipsum dolor sit amet.</dd>
+        <dt>Drugi Termin</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur.</dd>
+        <dt>Trzeci Termin</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing.</dd>
+      </dl>
+      <br /><br />
+
+      <!-- Przykład -->
+      <small>Przykład</small>
+      <h3>Klasy w szkole:</h3>
+      <ul>
+        <li>
+          3b
+          <ol type="A">
+            <li>Tomek</li>
+            <li>Dorota</li>
+            <li>Ania</li>
+          </ol>
+        </li>
+        <li>
+          4a
+          <ol type="I">
+            <li>Kasia</li>
+            <li>Adam</li>
+            <li>Ola</li>
+          </ol>
+        </li>
+        <li>
+          4e
+          <ol>
+            <li>Krzyś</li>
+            <li>Jarek</li>
+            <li>Grześ</li>
+          </ol>
+        </li>
+        <li>
+          5a
+          <ol type="a">
+            <li>Ola</li>
+            <li>Gosia</li>
+            <li>Danka</li>
+          </ol>
+        </li>
+        <li>5c</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+</html>

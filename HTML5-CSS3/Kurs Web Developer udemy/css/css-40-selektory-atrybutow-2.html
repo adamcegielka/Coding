@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory atrybutów [attribute="value"]</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+
+      div[data-blue="blue"] {
+        background-color: lightblue;
+        border: 2px solid darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 40 - Selektory atrybutów [attribute="value"]</h2>
+    <h3>
+      Wybierają elementy ze względu na wystepowanie danego atrybutu oraz jego
+      wartości w html
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <div data-blue="green">Lorem ipsum dolor sit amet.</div>
+      <div data-blue="BluE">Lorem ipsum dolor sit amet.</div>
+      <div data-blue="blue">Lorem ipsum dolor sit amet.</div>
+      <div data-blue=" blue">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne1">div</span
+      ><span class="wazne">[data-blue="blue"]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: lightblue;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; border: 2px solid darkblue;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;div <span class="wazne">data-blue="green"</span>&gt;Lorem ipsum dolor
+      sit amet.&lt;/div&gt;<br />
+      &lt;div <span class="wazne">data-blue="BluE"</span>&gt;Lorem ipsum dolor
+      sit amet.&lt;/div&gt;<br />
+      &lt;div <span class="wazne">data-blue="blue"</span>&gt;Lorem ipsum dolor
+      sit amet.&lt;/div&gt;<br />
+      &lt;div <span class="wazne">data-blue=" blue"</span>&gt;Lorem ipsum dolor
+      sit amet.&lt;/div&gt;<br />
+    </div>
+    <br /><br />
+  </body>
+</html>

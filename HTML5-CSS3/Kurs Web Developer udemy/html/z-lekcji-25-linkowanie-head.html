@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkowanie HEAD</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="javascript.js" type="text/js" />
+    <link rel="icon" href="img/html5.png" type="image/png" />
+  </head>
+  <body>
+    <h1>Linkowanie HEAD</h1>
+    <br />
+    <h3>CSS</h3>
+    <p>link rel="stylesheet" href="style.css" type="text/css"</p>
+    <br />
+    <h3>JavaScript</h3>
+    <p>link rel="stylesheet" href="javascript.js" type="text/js"</p>
+    <br />
+    <h3>Icona</h3>
+    <p>link rel="icon" href="img/html5.png" type="image/png"</p>
+    <br />
+    <!-- wstawianie JavaScript na końcu sekcji BODY -->
+    <h3>Wstawiamy kod JavaScript na końcu skcji BODY</h3>
+    <p>script src="javascript.js"</p>
+    <br /><br />
+    <script src="javascript.js"></script>
+    <div id="dvjs">
+      <h2>JavaScript</h2>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div>Code w pliku js:</div>
+    <textarea name="" id="" cols="80" rows="6">
+    window.onload = function () {
+        this.document.getElementById("dvjs").style.backgroundColor = "black";
+      };
+    </textarea>
+    <br /><br />
+  </body>
+</html>

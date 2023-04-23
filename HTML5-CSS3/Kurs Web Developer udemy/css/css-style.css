@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(83, 80, 80);
+  color: aliceblue;
+}
+
+h2 {
+  color: antiquewhite;
+}
+
+h3 {
+  text-decoration: underline;
+  color: aqua;
+}
+
+p {
+  color: goldenrod;
+  text-transform: capitalize;
+}
+
+.p-zmiana {
+  color: bisque;
+  text-transform: none;
+}
+
+.menu-item {
+  background: aqua;
+}
+
+#current {
+  background: yellow;
+}

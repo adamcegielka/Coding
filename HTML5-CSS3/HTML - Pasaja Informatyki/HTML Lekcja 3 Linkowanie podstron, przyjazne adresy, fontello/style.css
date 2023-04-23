@@ -1,0 +1,163 @@
+body {
+  background-color: #303030;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rectangle {
+  width: 960px;
+  margin: 20px;
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  width: 600px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.zegar {
+  float: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.square {
+  width: 50%;
+  float: left;
+}
+
+.title1 {
+  width: 230px;
+  height: 142px;
+  margin: 10px;
+  background-color: #3095d3;
+  float: left;
+  text-align: center;
+}
+
+.title1:hover {
+  background-color: #2084c2;
+}
+
+.title2 {
+  width: 230px;
+  height: 142px;
+  margin: 10px;
+  background-color: #666666;
+  float: left;
+  text-align: center;
+}
+.title2:hover {
+  background-color: #555555;
+}
+
+.title3 {
+  width: 230px;
+  height: 142px;
+  margin: 10px;
+  background-color: #93c748;
+  float: left;
+  text-align: center;
+}
+
+.title3:hover {
+  background-color: #82b637;
+}
+
+.title4 {
+  margin: 10px;
+  width: 450px;
+  height: 112px;
+  background-color: #ee5a32;
+  text-align: justify;
+  font-size: 20px;
+  padding: 15px;
+  line-height: 150%;
+}
+
+.title5 {
+  width: 420px;
+  height: 244px;
+  margin: 10px;
+  background-color: #666666;
+  text-align: justify;
+  padding: 30px;
+}
+
+.lin {
+  width: 105px;
+  height: 142px;
+  margin: 10px;
+  background-color: #0a66c2;
+  float: left;
+}
+
+.lin:hover {
+  background-color: #0955b1;
+}
+
+.fb {
+  width: 105px;
+  height: 142px;
+  margin: 10px;
+  background-color: #17a9fd;
+  float: left;
+}
+
+.fb:hover {
+  background-color: #0698ec;
+}
+
+.inst {
+  width: 105px;
+  height: 142px;
+  margin: 10px;
+  background-color: #bc2a8d;
+  float: left;
+}
+
+.inst:hover {
+  background-color: #ab197c;
+}
+
+.pinterest {
+  width: 105px;
+  height: 142px;
+  margin: 10px;
+  background-color: #e60023;
+  float: left;
+}
+
+.pinterest:hover {
+  background-color: #c50012;
+}
+
+a.tilelink {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.sociallink {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.autor {
+  text-align: right;
+}

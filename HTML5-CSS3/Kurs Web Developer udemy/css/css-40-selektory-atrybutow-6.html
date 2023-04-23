@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 40 - Selektory atrybutów [attribute$="value"]</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+      [class$="dark"] {
+        color: white;
+        background-color: darkslategray;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lekcja 40 - Selektory atrybutów [attribute$="value"]</h2>
+    <h3>
+      $= Wybiera element gdy wartość atrybutu kończy się podobnym stringiem
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <p class="foo-dark">zmieniony paragraf</p>
+      <p class="small-text foo-dark box-intro">zwykły paragraf</p>
+      <div class="bar div-dark">zmieniony div</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">[class$="dark"]</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: white;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: darkslategray;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; padding: 5px;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;p class="<span class="wazne">foo-dark</span>"&gt;zmieniony
+      paragraf&lt;/p&gt;<br />
+      &lt;p class="small-text foo-dark box-intro"&gt; zwykły
+      paragraf&lt;/p&gt;<br />
+      &lt;div class="bar <span class="wazne">div-dark</span>"&gt;zmieniony
+      div&lt;/div&gt;
+    </div>
+    <br /><br />
+  </body>
+</html>

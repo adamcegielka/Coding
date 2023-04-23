@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/css3_logo.png" type="image/png" />
+    <title>Lekcja 36 - Selektor potomka</title>
+    <style>
+      body {
+        background-color: #4e4e4e;
+        color: azure;
+        text-align: left;
+        padding-left: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wazne {
+        color: goldenrod;
+      }
+      .wazne1 {
+        color: orangered;
+      }
+      .wazne2 {
+        color: cornflowerblue;
+      }
+      ul ol {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Selektor potomka</h2>
+    <h3>
+      Wybiera wszystkich pasujących potomków,<br />
+      niezależnie czy są bezpośrednimi potomkami
+    </h3>
+    <br />
+    <div style="width: 300px">
+      <ul>
+        <li>Chrysler</li>
+        <li>Buick</li>
+        <li>
+          Dodge:
+          <ol>
+            <li>Charger</li>
+            <li>Viper</li>
+          </ol>
+        </li>
+        <li>Audi</li>
+      </ul>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Kod CSS -->
+    <div>
+      &lt;style&gt;<br />
+      &nbsp;&nbsp;&nbsp; <span class="wazne">ul ol</span> {<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: red;<br />
+      &nbsp;&nbsp;&nbsp; }<br />
+      &lt;/style&gt;
+    </div>
+    <br /><br /><br />
+    <!-- Kod HTML -->
+    <div>
+      &lt;ul&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;li&gt;Chrysler&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;li&gt;Buick&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;li&gt;Dodge:<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span class="wazne">ol</span
+      >&gt;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span
+        class="wazne"
+        >li</span
+      >&gt;Charger&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span
+        class="wazne"
+        >li</span
+      >&gt;Viper&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/ol&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp; &lt;li&gt;Audi&lt;/li&gt;<br />
+      &lt;/ul&gt;<br />
+    </div>
+    <br /><br />
+  </body>
+</html>
