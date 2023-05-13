@@ -23,3 +23,27 @@ function updateLight(current) {
   const currentStateOfLight = "green";      // enter light colour
   const newLightState = updateLight(currentStateOfLight);
   console.log(newLightState);
+
+
+  // for SWITCH:
+
+function updateLightColor(currentColor) {
+    switch (currentColor) {
+      case "green":
+        return "yellow";
+        break;
+      case "yellow":
+        return "red";
+        break;
+      case "red":
+        return "green";
+        break;
+      default:
+        return "Incorrect light condition";
+        break;
+    }
+  }
+ 
+  const currentLightColour = "red";      // enter light colour
+  const newLightColour = updateLightColor(currentLightColour);
+  console.log(newLightColour);
