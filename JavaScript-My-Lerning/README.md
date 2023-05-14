@@ -9,6 +9,7 @@
 - Software [VSCode](https://code.visualstudio.com/)  
 
 ## Useful sites:
+- [Udemy](https://www.udemy.com/course/kurs-programowanie-w-javascript-od-zera-do-mastera/)
 - [codewars](https://www.codewars.com/users/AdamCegielka)
 - [Kurs JavaScript dla superbohaterów](https://kursjs.pl/)
 - [w3schools](https://my-learning.w3schools.com/tutorial/js)
