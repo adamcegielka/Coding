@@ -2,8 +2,6 @@
 
 let resultMath = document.getElementById("math");
 let resultDate = document.getElementById("date");
-let clock1 = document.getElementById("closk1");
-let clock2 = document.getElementById("clock2");
 
 // Math
 
