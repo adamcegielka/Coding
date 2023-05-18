@@ -20,3 +20,20 @@ body {
   box-shadow: 3px 3px 8px #999;
   font-size: 1.7rem;
 }
+
+.lista {
+  text-align: left;
+  color: green;
+}
+
+#answer {
+  font-size: 80%;
+}
+
+.good {
+  color: aqua;
+}
+
+.bad {  
+  color: red;
+}
