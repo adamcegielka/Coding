@@ -37,3 +37,7 @@ body {
 .bad {  
   color: red;
 }
+
+#list {
+  text-align: left;
+}
