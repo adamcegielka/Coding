@@ -3,8 +3,8 @@
 Number.MIN_SAFE_INTEGER;    // -9007199254740991
 Number.MAX_SAFE_INTEGER;    // 9007199254740991 : 2^53-1
 
-Number.isSafeInteger(Math.pow(2,53) - 1);       true
-Number.isSafeInteger(Math.pow(2,53));           false
+Number.isSafeInteger(Math.pow(2,53) - 1);       // true
+Number.isSafeInteger(Math.pow(2,53));           // false
 
 
 // NaN:
