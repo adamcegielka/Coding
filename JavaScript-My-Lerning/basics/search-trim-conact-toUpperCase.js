@@ -1,5 +1,5 @@
 // search()
-let regularExpression = /[A-Z]/g;
+let regularExpression = /[A-Z]/g;       //  /g flag (global match):
 let message = 'some Tekst';
 console.log(message.search(regularExpression));       // 5
 
