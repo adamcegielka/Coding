@@ -16,6 +16,18 @@ console.log(d)         // 56
 
 // --------------------------------------
 
+let text = "Adam, Ewa, Anna";
+let part1 = text.slice(6);
+let part2 = text.slice(4, 13);
+let part3 = text.slice(-11);
+let part4 = text.slice(-9, -3);
+console.log(part1);      // Ewa, Anna
+console.log(part2);      // , Ewa, An
+console.log(part3);      // , Ewa, Anna
+console.log(part4);      // Ewa, A
+
+// --------------------------------------
+
 function getEmailParts(email) {
     const monkeyIndex = email.indexOf('@');
     if (monkeyIndex == -1)
