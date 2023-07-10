@@ -17,35 +17,21 @@ console.log(d);                 // 33
 
 // -------------------------------------------
 
-function validateData(email) {
-    const validateA = email.indexOf('a');
-    const validateB = email.indexOf('@');
-    const validateC = email.indexOf('.');
-
-    return `
-    Validate 'a': ${validateA}
-    Validate '@': ${validateB}
-    Validate '.': ${validateC}
-    `
-};
-
-const validate1 = validateData('marco@example.com');
-console.log(validate1);
-// Validate 'a': 1
-// Validate '@': 5
-// Validate '.': 13
-
-const validate2 = validateData('marco.com');
-console.log(validate2);
-// Validate 'a': 1
-// Validate '@': -1
-// Validate '.': 5
-
-const validate3 = validateData('marco@examle');
-console.log(validate3);
-// Validate 'a': 1
-// Validate '@': 5
-// Validate '.': -1
+function findIndexes(text1, searchText) {
+    let first = text1.indexOf(searchText);
+    let last = text1.lastIndexOf(searchText);
+  
+    console.log("First: " + first);
+    console.log("Last: " + last);
+  }
+  
+  let text1 = "Example text with examples";
+  let searchText = "example";
+  
+  findIndexes(text1, searchText);
+  
+  // First: 18
+  // Last: 18
 
 // -----------------------------------------
 
@@ -76,3 +62,36 @@ console.log(email2, validateData1(email2));
 const email3 = 'marco.com';
 console.log(email3, validateData1(email3));
 // marco.com
+
+
+// -------------------------------------------
+
+function validateData(email) {
+    const validateA = email.indexOf('a');
+    const validateB = email.indexOf('@');
+    const validateC = email.indexOf('.');
+
+    return `
+    Validate 'a': ${validateA}
+    Validate '@': ${validateB}
+    Validate '.': ${validateC}
+    `
+};
+
+const validate1 = validateData('marco@example.com');
+console.log(validate1);
+// Validate 'a': 1
+// Validate '@': 5
+// Validate '.': 13
+
+const validate2 = validateData('marco.com');
+console.log(validate2);
+// Validate 'a': 1
+// Validate '@': -1
+// Validate '.': 5
+
+const validate3 = validateData('marco@examle');
+console.log(validate3);
+// Validate 'a': 1
+// Validate '@': 5
+// Validate '.': -1
