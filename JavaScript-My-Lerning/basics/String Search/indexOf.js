@@ -1,54 +1,52 @@
 // indexOf(), lastIndexOf()
 
-let text = 'Lorem Ipsum is simply dummy text of the printing, is typesetting industry.';
+let text =
+  'Lorem Ipsum is simply dummy text of the printing, is typesetting industry.';
 
 let a = text.indexOf('is');
-console.log(a);                 // 12
+console.log(a); // 12
 
 let b = text.indexOf('is', 13);
-console.log(b);                 // 50
+console.log(b); // 50
 
 let c = text.indexOf('is', 51);
-console.log(c);                 // -1
+console.log(c); // -1
 
 let d = text.lastIndexOf('of', 35);
-console.log(d);                 // 33
-
+console.log(d); // 33
 
 // -------------------------------------------
 
 function findIndexes(text1, searchText) {
-    let first = text1.indexOf(searchText);
-    let last = text1.lastIndexOf(searchText);
-  
-    console.log("First: " + first);
-    console.log("Last: " + last);
-  }
-  
-  let text1 = "Example text with examples";
-  let searchText = "example";
-  
-  findIndexes(text1, searchText);
-  
-  // First: 18
-  // Last: 18
+  let first = text1.indexOf(searchText);
+  let last = text1.lastIndexOf(searchText);
+
+  console.log('First: ' + first);
+  console.log('Last: ' + last);
+}
+
+let text1 = 'Example text with examples';
+let searchText = 'example';
+
+findIndexes(text1, searchText);
+
+// First: 18
+// Last: 18
 
 // -----------------------------------------
 
 function validateData1(email) {
-    let validateMonky = email.indexOf('@');
-    if (validateMonky < 0)
-    return false;
+  let validateMonky = email.indexOf('@');
+  if (validateMonky < 0) return false;
 
-    let validateDot = email.indexOf('.', validateMonky);
-    if (validateDot == -1)
-    return false;
+  let validateDot = email.indexOf('.', validateMonky);
+  if (validateDot == -1) return false;
 
-    /*if (validateDot < validateMonky) {
+  /*if (validateDot < validateMonky) {
         return false;       // dot before @
     }*/
 
-    return true;
+  return true;
 }
 
 const email1 = 'marco@example.com';
@@ -63,20 +61,19 @@ const email3 = 'marco.com';
 console.log(email3, validateData1(email3));
 // marco.com
 
-
 // -------------------------------------------
 
 function validateData(email) {
-    const validateA = email.indexOf('a');
-    const validateB = email.indexOf('@');
-    const validateC = email.indexOf('.');
+  const validateA = email.indexOf('a');
+  const validateB = email.indexOf('@');
+  const validateC = email.indexOf('.');
 
-    return `
+  return `
     Validate 'a': ${validateA}
     Validate '@': ${validateB}
     Validate '.': ${validateC}
-    `
-};
+    `;
+}
 
 const validate1 = validateData('marco@example.com');
 console.log(validate1);

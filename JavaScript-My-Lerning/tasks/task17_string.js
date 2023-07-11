@@ -1,16 +1,24 @@
-function getUserDescription(fullName, street, zip, city, country, email, phone) {
-    const firstSign = fullName[0];
-    const nameLength = fullName.length;
-    const lastSign = fullName[fullName.length - 1];
-    const secondSign = street[1];
-    const streetLength = street.length;
-    const zipLength = zip.toString().length;
-    const cityLength = city.length;
-    const countryLength = country.length;
-    const emailLength = email.length;
-    const fifthPhone = phone.toString()[4];
+function getUserDescription(
+  fullName,
+  street,
+  zip,
+  city,
+  country,
+  email,
+  phone,
+) {
+  const firstSign = fullName[0];
+  const nameLength = fullName.length;
+  const lastSign = fullName[fullName.length - 1];
+  const secondSign = street[1];
+  const streetLength = street.length;
+  const zipLength = zip.toString().length;
+  const cityLength = city.length;
+  const countryLength = country.length;
+  const emailLength = email.length;
+  const fifthPhone = phone.toString()[4];
 
-    return `
+  return `
     User data: 
     Name ${fullName}, First name sign: ${firstSign}, Number of signs: ${nameLength}, The last sign is: ${lastSign}
     Street ${street}, Second street sign: ${secondSign}, Number of signs: ${streetLength}
@@ -20,10 +28,26 @@ function getUserDescription(fullName, street, zip, city, country, email, phone) 
     `;
 }
 
-const user1 = getUserDescription("Jose Sanchez", "Doctor Esquerdo", "47874", "Roquetas de Mar", "Spain", "sanchez@yahoo.es", "203230102");
+const user1 = getUserDescription(
+  'Jose Sanchez',
+  'Doctor Esquerdo',
+  '47874',
+  'Roquetas de Mar',
+  'Spain',
+  'sanchez@yahoo.es',
+  '203230102',
+);
 console.log(user1);
 
-const user2 = getUserDescription("Vital Barbier", "Rue des Écoles, 110", "73564", "Bordeaux", "France", "barbier@free.fr", "1514501460");
+const user2 = getUserDescription(
+  'Vital Barbier',
+  'Rue des Écoles, 110',
+  '73564',
+  'Bordeaux',
+  'France',
+  'barbier@free.fr',
+  '1514501460',
+);
 console.log(user2);
 
 /*

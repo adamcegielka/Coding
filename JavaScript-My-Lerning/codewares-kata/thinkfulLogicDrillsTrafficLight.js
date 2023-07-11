@@ -9,41 +9,40 @@ For example, when the input is green, output should be yellow.
 */
 
 function updateLight(current) {
-    if (current === "green") {
-      return "yellow";
-    } else if (current === "yellow") {
-      return "red";
-    } else if (current === "red") {
-      return "green";
-    } else {
-      return "Incorrect light condition";
-    }
+  if (current === 'green') {
+    return 'yellow';
+  } else if (current === 'yellow') {
+    return 'red';
+  } else if (current === 'red') {
+    return 'green';
+  } else {
+    return 'Incorrect light condition';
   }
-  
-  const currentStateOfLight = "green";      // enter light colour
-  const newLightState = updateLight(currentStateOfLight);
-  console.log(newLightState);
+}
 
+const currentStateOfLight = 'green'; // enter light colour
+const newLightState = updateLight(currentStateOfLight);
+console.log(newLightState);
 
-  // for SWITCH:
+// for SWITCH:
 
 function updateLightColor(currentColor) {
-    switch (currentColor) {
-      case "green":
-        return "yellow";
-        break;
-      case "yellow":
-        return "red";
-        break;
-      case "red":
-        return "green";
-        break;
-      default:
-        return "Incorrect light condition";
-        break;
-    }
+  switch (currentColor) {
+    case 'green':
+      return 'yellow';
+      break;
+    case 'yellow':
+      return 'red';
+      break;
+    case 'red':
+      return 'green';
+      break;
+    default:
+      return 'Incorrect light condition';
+      break;
   }
- 
-  const currentLightColour = "red";      // enter light colour
-  const newLightColour = updateLightColor(currentLightColour);
-  console.log(newLightColour);
+}
+
+const currentLightColour = 'red'; // enter light colour
+const newLightColour = updateLightColor(currentLightColour);
+console.log(newLightColour);

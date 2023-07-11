@@ -15,32 +15,30 @@ str_count("", 'z'); // returns 0
 */
 
 function strCount(str, letter) {
-    let count = 0;
-  
-    for (let i = 0; i < str.length; i++) {
-      if (str.charAt(i) === letter) {
-        count++;
-      }
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str.charAt(i) === letter) {
+      count++;
     }
-  
-    return count;
   }
 
-  module.exports = strCount;
-  
+  return count;
+}
+
+module.exports = strCount;
 
 // Sample Tests
 
 const { assert } = require('chai');
 
-describe("Tests", () => {
-  it("test", () => {
+describe('Tests', () => {
+  it('test', () => {
     assert.strictEqual(strCount('Hello', 'o'), 1);
     assert.strictEqual(strCount('Hello', 'l'), 2);
-    assert.strictEqual(strCount('',      'z'), 0);
+    assert.strictEqual(strCount('', 'z'), 0);
   });
 });
-
 
 /*
 function strCount(str, letter) {
