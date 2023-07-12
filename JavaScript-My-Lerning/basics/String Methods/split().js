@@ -19,12 +19,10 @@ console.log('Split on pipe: ', pipe);         // Split on pipe:  (2) ['Adam, Ew
 
 function splitText(text, separator) {
     let dividedText = text.split(separator);
-    console.log('Divided Text: ', dividedText);
+    console.log('Divided Text: ', dividedText);     // Divided Text:  (3) ['Smith', '1999', 'USA']
+    console.log('Divided Text: ' + dividedText);    // Divided Text: Smith,1999,USA
 }
 
 let text = 'Smith|1999|USA';
 let separator = '|';
 splitText(text, separator);
-
-// Divided Text:  (3) ['Smith', '1999', 'USA']     - with: console.log('Divided Text: ', dividedText);
-// Divided Text: Smith,1999,USA                    - with: console.log('Divided Text: ' + dividedText);
