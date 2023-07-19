@@ -8,9 +8,12 @@
 
 ## Useful sites:
 
+- [Codepen.io](https://codepen.io/pen/?editors=0012)
+- [Scrimba.com](https://scrimba.com/)
 - [Udemy](https://www.udemy.com/course/kurs-programowanie-w-javascript-od-zera-do-mastera/)
 - [codewars](https://www.codewars.com/users/AdamCegielka)
 - [Kurs JavaScript dla superbohaterów](https://kursjs.pl/)
+- [JavaScript Tutorials](https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
 - [w3schools](https://my-learning.w3schools.com/tutorial/js)
 - [GitHub](https://github.com/LinkedInLearning/javascript-essential-training-2832077)
 
