@@ -63,3 +63,33 @@ let yy = 7;
 if (xx && yy);     // and
 if (xx || yy);     // or
 if (!(xx > yy));   // not
+
+// --------------------------------------
+
+if (8 > 5) {
+    console.log('big');
+} else {
+    console.log('small');
+}  // big
+
+// or
+(8 > 5) ? console.log('big') : console.log('small');  // big
+
+let data = (8 > 5) ? 'big' : 'small';
+data   // 'big'
+
+// --------------------------------------
+
+for(let i = 0, j = 3; i < 8; i++, j+=2) {
+    console.log('i:'+i + ' j:'+j);
+}
+/*
+i:0 j:3
+i:1 j:5
+i:2 j:7
+i:3 j:9
+i:4 j:11
+i:5 j:13
+i:6 j:15
+i:7 j:17
+*/
