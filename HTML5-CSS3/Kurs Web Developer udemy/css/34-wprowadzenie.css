@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(83, 80, 80);
+    color: aliceblue;
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+h2 {
+    text-decoration: underline;
+    color: aqua;
+}
+
+h3 {
+    text-decoration: line-through;
+}
+
+p {
+    color: goldenrod;
+    text-transform: capitalize;
+}
+
+#zmiana-coloru-id {
+    color: bisque;
+    text-transform: none;
+}
+
+.zmiana-coloru-css {
+    color: rgb(54, 230, 107);
+    text-transform: none;
+}
