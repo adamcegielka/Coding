@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="36-selektory.css" type="text/css" />
+  <title>Lekcja 36 - Selektory</title>
+</head>
+
+<body>
+  <h1>Selektory</h1>
+  <h3>Wybierają wszyskie elementy po nazwie taga</h3>
+  <section style="width: 250px">
+    <h4>Page title</h4>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="style-1 style-2">Lorem ipsum dolor sit amet.</p>
+    <p class="style-1 style-2 style-3">Lorem ipsum dolor sit amet.</p>
+    <p class="style-1" id="id-style">Lorem ipsum dolor sit amet.</p>
+  </section><br /><hr>
+  <!-- Selektor potomka -->
+  <h3>Selektory potomka</h3>
+  <section style="width: 250px">
+    <ul>
+      <li>Niemcy</li>
+      <li>Czechy</li>
+      <li>
+        Polska:
+        <ol>
+          <li>Gdańsk</li>
+          <li>Poznań</li>
+        </ol>
+      </li>
+      <li>Szwecja</li>
+    </ul>
+  </section>
+  <div style="width: 300px">
+    <article>
+      <header>
+        <h1>Strona główna</h1>
+        <p>Autor: <strong>Adam</strong></p>
+      </header>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <footer>Wszystkie prawa zastrzeżone</footer>
+      <section class="article-comments">
+        <article class="user-comment">
+          <p>Treść komentarza.</p>
+        </article>
+      </section>
+    </article>
+  </div><br /><hr>
+  <!-- Selektory dzieci -->
+  <h3>Selektory dzieci</h3>
+  <div style="width: 300px">
+    <section>
+      <article>
+        <header>Adam:</header>
+        <p>Komentarz 1 Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article>
+        <header>Ewa:</header>
+        <p>Komentarz 2 <strong>Lorem</strong> ipsum dolor sit amet.</p>
+      </article>
+    </section>
+  </div><br /><hr>
+  <!-- Selektory A+B -->
+  <h3>Selektory A+B pierwszy następny sąsiad</h3>  
+  <div style="width: 300px">
+    <section>
+      <h2>H2</h2>
+      <p>Lorem, ipsum dolor sit amet.</p>
+      <p>Lorem, ipsum dolor sit amet.</p>
+      <p>Lorem, ipsum dolor sit amet.</p>
+    </section>
+  </div><br /><hr>
+  <!-- Selektory A~B -->
+  <h3>Selektory A~B wszyscy następni sąsiadzi</h3>  
+  <div style="width: 300px">
+    <section>
+      <h5>H5</h5>
+      <p>Lorem, ipsum dolor sit amet.</p>
+      <p>Lorem, ipsum dolor sit amet.</p>
+      <p>Lorem, ipsum dolor sit amet.</p>
+    </section>
+  </div>
+</body>
+
+</html>
