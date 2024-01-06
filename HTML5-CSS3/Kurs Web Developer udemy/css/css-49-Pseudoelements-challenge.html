@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 49 - Pseudo-elemets - challenge</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: azure;
+      text-align: left;
+      padding-left: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    ::selection {
+      color: orange;
+    }
+
+    article::first-letter {
+      font-weight: bold;
+    }
+
+    article::first-line {
+      text-decoration: underline;
+      color: white;
+    }
+
+    article::before {
+      content: "@ ";
+      border: 2px dotted red;
+    }
+
+    article:last-child::after {
+      font-weight: bold;
+      content: " HOT!";
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lesson 49</h1>
+  <h2>Pseudo-elements - challenge</h2>
+    <br />
+    <!-- challenge -->
+    <div>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>
+      <article Lorem30="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam quae incidunt pariatur quia id iure quod! Harum, voluptate similique eveniet quas natus nesciunt voluptatem totam culpa, alias, distinctio odit.</article>      
+    </div>
+
+</body>
+
+</html>
