@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 47 - Pseudo-classes - challenge</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: azure;
+      text-align: left;
+      padding-left: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    article:first-child {
+      color: red;
+    }
+
+    article:last-child {
+      color: blue;
+    }
+    /* even - parzyste */
+    article:nth-child(even) {
+      font-weight: bold;
+    }
+    /* odd - nieparzyste */
+    article:nth-child(odd) {
+      font-style: italic;
+    }
+    /* every third - co trzeci */
+    article:nth-child(3n) {
+      background-color: yellowgreen;
+    }
+
+    article:not(.news) {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lesson 47</h1>
+  <h2>Pseudo-classes - Challenge</h2>
+    <br />
+    <!-- challenge -->
+    <section>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article class="news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+      <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus!</article>
+    </section>
+
+</body>
+
+</html>
