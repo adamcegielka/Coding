@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 46 - Pseudo-classes - challenge</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: azure;
+      text-align: left;
+      padding-left: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .send {
+      width: 80px;
+      background-color: yellowgreen;
+      border: 3px solid gray;
+      color: blueviolet;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .send:active {
+      font-weight: bold;
+    }
+
+    .send:hover {
+      background-color: orange;
+    }
+
+    .send:focus {
+      border: 3px solid red;
+    }
+
+    .send:disabled {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lesson 46</h1>
+  <h2>Pseudo-classes - Challenge</h2>
+    <br />
+    <!-- challenge -->
+    <button class="send">Click</button>
+    <button class="send" disabled>Save</button>
+    <button class="send">Click</button>
+    <button class="send">Click</button>
+
+</body>
+
+</html>
