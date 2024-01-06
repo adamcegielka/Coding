@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 48 - Pseudo-elemets</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: azure;
+      text-align: left;
+      padding-left: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p::first-letter {
+      font-size: 24px;
+      color: green;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    p::selection {
+      color: brown;
+    }
+
+    li::selection {
+      color: aqua;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li::before {
+      content: "➥ ";
+      color: aquamarine;
+    }
+
+    .best::before {
+      content: "➤ ";
+    }
+
+    li::after {
+      content: " ✳";
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lesson 48</h1>
+  <h2>Pseudo-elements</h2>
+    <br />
+    <!-- lesson -->
+    <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis dicta fuga recusandae earum optio? Mollitia porro soluta cumque rem pariatur, impedit, asperiores dolorum nobis, eligendi nemo quo neque sequi. Recusandae officiis beatae molestias eaque, asperiores deleniti? Sit accusantium nobis dolores obcaecati deserunt explicabo omnis fugit quasi nulla, deleniti tenetur.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+      <ul>
+        <li>one</li>
+        <li class="best">two</li>
+        <li>three</li>
+      </ul>
+    </section>
+
+</body>
+
+</html>
