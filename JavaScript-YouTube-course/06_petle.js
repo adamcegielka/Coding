@@ -6,30 +6,30 @@ let box2 = document.getElementById("score2");
 
 // While
 
-let i = 7; 
+let i = 0; 
 
 while (i < 7) {
-    box.innerHTML += i + ", ";
+    box.innerHTML += i + ", <br>";
     i++;
 }
 
 
 // Do While
 
-let j = 7;
+let j = 0;
 
 do {
-    box1.innerHTML += j + ", ";
+    box1.innerHTML += j + ", <br>";
     j++;
 } while (j < 7);
 
 
 // For
 
-let k = 7;
+let k = 0;
+
+// for (let k = 7; k < 7; k++) {box2.innerHTML +=  k + ", <br>";}
 
 for (; k < 7; k++) {
-    box2.innerHTML +=  k + ", ";
+    box2.innerHTML +=  k + ", <br>";
 }
-
-// for (let k = 7; k < 7; k++) {box2.innerHTML +=  k + ", ";}
