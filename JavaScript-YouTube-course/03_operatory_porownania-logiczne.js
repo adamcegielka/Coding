@@ -32,7 +32,7 @@ let numberG = false;
 
 console.log(numberE || numberG);  // "OR" -  true || false = true
 console.log(numberE || numberE);  // "OR" -  true || true = true
-console.log(numberG || numberG);  // "OR" -  true || false = false
+console.log(numberG || numberG);  // "OR" -  false || false = false
 
 console.log(numberE && numberE);  // "AND" -  true &&| true = true
 console.log(numberE && numberG);  // "AND" -  true && false = false
