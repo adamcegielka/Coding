@@ -70,12 +70,16 @@ console.log(arrayPrototyp);
 let x = new Array('one','two', 'three');
 console.log('Select:', x[1]);
 
+// -----
+
 let y = new Array(3);
 y[0] = 1;
 y[1] = 2;
 y[2] = 3;
 console.log('Select:', y);
 console.log('Select:', y[0]);
+
+// -----
 
 let z = ['one','two', 'three'];
 console.log('Select:', z);
