@@ -63,3 +63,20 @@ result.innerHTML += "---------- Prototypical function ---------<br>";
 let arrayPrototyp = (arrayNames.concat(arrayAges)).concat(arrayCars);
 console.log(arrayPrototyp);
 // (19) ['Adi', 'Ewa', 'Jan', 'Ola', 'Darek', empty × 4, 'Annia', 18, 25, true, 15, 'seventeen', 'BMW', 'Porsche', 'Audi', 'Skoda']
+
+
+// SUMMARY - there are three ways to write array
+
+let x = new Array('one','two', 'three');
+console.log('Select:', x[1]);
+
+let y = new Array(3);
+y[0] = 1;
+y[1] = 2;
+y[2] = 3;
+console.log('Select:', y);
+console.log('Select:', y[0]);
+
+let z = ['one','two', 'three'];
+console.log('Select:', z);
+console.log('Select:', z[2]);
